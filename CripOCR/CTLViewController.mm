@@ -47,13 +47,16 @@
     self.originImg = image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
+ }
+- (IBAction)textRecg:(id)sender {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.resultText animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = @"照片识别中";
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
-        [tesseract setImage:image];
+        [tesseract setImage:self.originImg
+         ];
         [tesseract recognize];
         NSString *recoText = [tesseract recognizedText];
         NSLog(@"%@", recoText);
@@ -65,10 +68,15 @@
             [hud hide:YES];
         });
     });
+
 }
 
 - (IBAction)intensifyImg:(id)sender {
-
+    cv::Mat inputMat = [self cvMatFromUIImage:self.originImg];
+    cv::Mat greyMat;
+    cv::cvtColor(inputMat, greyMat, CV_BGR2GRAY);
+    UIImage *greyImg = [self UIImageFromCVMat:greyMat];
+    self.photo.image = greyImg;
 }
 
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image
