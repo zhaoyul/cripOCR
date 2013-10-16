@@ -1,1269 +1,583 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>13A4B3606D604D9B9627FA86</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>460B0AFA4FF4417D843E7D27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>5113A45FECC042C6A82CE032</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>745194A57EF240C197CB16B0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13A4B3606D604D9B9627FA86</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192015180E2362004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D519205A180E28DE004C6B57</string>
-				<string>D5192027180E2363004C6B57</string>
-				<string>D5192046180E2363004C6B57</string>
-				<string>D5192020180E2363004C6B57</string>
-				<string>D519201F180E2363004C6B57</string>
-				<string>5113A45FECC042C6A82CE032</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192016180E2362004C6B57</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>CTL</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Zhaoyu Li</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>D519203E180E2363004C6B57</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>D519201D180E2362004C6B57</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>D5192019180E2362004C6B57</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>D5192015180E2362004C6B57</string>
-			<key>productRefGroup</key>
-			<string>D519201F180E2363004C6B57</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>D519201D180E2362004C6B57</string>
-				<string>D519203E180E2363004C6B57</string>
-			</array>
-		</dict>
-		<key>D5192019180E2362004C6B57</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D519204E180E2363004C6B57</string>
-				<string>D519204F180E2363004C6B57</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D519201A180E2362004C6B57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D5192032180E2363004C6B57</string>
-				<string>D519202E180E2363004C6B57</string>
-				<string>D5192038180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D519201B180E2362004C6B57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D5192059180E27BB004C6B57</string>
-				<string>D5192057180E24E8004C6B57</string>
-				<string>D5192024180E2363004C6B57</string>
-				<string>D5192026180E2363004C6B57</string>
-				<string>D5192022180E2363004C6B57</string>
-				<string>745194A57EF240C197CB16B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D519201C180E2362004C6B57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D5192061180E28DE004C6B57</string>
-				<string>D5192063180E28DE004C6B57</string>
-				<string>D519203A180E2363004C6B57</string>
-				<string>D519202C180E2363004C6B57</string>
-				<string>D5192064180E28DE004C6B57</string>
-				<string>D5192062180E28DE004C6B57</string>
-				<string>D5192060180E28DE004C6B57</string>
-				<string>D5192035180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D519201D180E2362004C6B57</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D5192050180E2363004C6B57</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F452EA0FCA644EE9B61C8D77</string>
-				<string>D519201A180E2362004C6B57</string>
-				<string>D519201B180E2362004C6B57</string>
-				<string>D519201C180E2362004C6B57</string>
-				<string>460B0AFA4FF4417D843E7D27</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CripOCR</string>
-			<key>productName</key>
-			<string>CripOCR</string>
-			<key>productReference</key>
-			<string>D519201E180E2363004C6B57</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>D519201E180E2363004C6B57</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CripOCR.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D519201F180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D519201E180E2363004C6B57</string>
-				<string>D519203F180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192020180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D5192058180E27BB004C6B57</string>
-				<string>D5192056180E24E8004C6B57</string>
-				<string>D5192021180E2363004C6B57</string>
-				<string>D5192023180E2363004C6B57</string>
-				<string>D5192025180E2363004C6B57</string>
-				<string>D5192040180E2363004C6B57</string>
-				<string>13A4B3606D604D9B9627FA86</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192021180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D5192022180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192021180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192023180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D5192024180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192023180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192025180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D5192026180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192025180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192027180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D5192030180E2363004C6B57</string>
-				<string>D5192031180E2363004C6B57</string>
-				<string>D5192033180E2363004C6B57</string>
-				<string>D5192036180E2363004C6B57</string>
-				<string>D5192037180E2363004C6B57</string>
-				<string>D5192039180E2363004C6B57</string>
-				<string>D5192028180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CripOCR</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192028180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D5192029180E2363004C6B57</string>
-				<string>D519202A180E2363004C6B57</string>
-				<string>D519202D180E2363004C6B57</string>
-				<string>D519202F180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192029180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>CripOCR-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519202A180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D519202B180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519202B180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519202C180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519202A180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D519202D180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519202E180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519202D180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D519202F180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CripOCR-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192030180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CTLAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192031180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CTLAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192032180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192031180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192033180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D5192034180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192034180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192035180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192033180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192036180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CTLViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192037180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.cpp.objcpp</string>
-			<key>path</key>
-			<string>CTLViewController.mm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192038180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192037180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192039180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519203A180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192039180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D519203B180E2363004C6B57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D519204D180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D519203C180E2363004C6B57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D5192041180E2363004C6B57</string>
-				<string>D5192043180E2363004C6B57</string>
-				<string>D5192042180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D519203D180E2363004C6B57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D519204B180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D519203E180E2363004C6B57</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D5192053180E2363004C6B57</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D519203B180E2363004C6B57</string>
-				<string>D519203C180E2363004C6B57</string>
-				<string>D519203D180E2363004C6B57</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D5192045180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CripOCRTests</string>
-			<key>productName</key>
-			<string>CripOCRTests</string>
-			<key>productReference</key>
-			<string>D519203F180E2363004C6B57</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>D519203F180E2363004C6B57</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CripOCRTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D5192040180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D5192041180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192040180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192042180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192021180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192043180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192025180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192044180E2363004C6B57</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D5192016180E2362004C6B57</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D519201D180E2362004C6B57</string>
-			<key>remoteInfo</key>
-			<string>CripOCR</string>
-		</dict>
-		<key>D5192045180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>D519201D180E2362004C6B57</string>
-			<key>targetProxy</key>
-			<string>D5192044180E2363004C6B57</string>
-		</dict>
-		<key>D5192046180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D519204C180E2363004C6B57</string>
-				<string>D5192047180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CripOCRTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192047180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D5192048180E2363004C6B57</string>
-				<string>D5192049180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192048180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>CripOCRTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192049180E2363004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D519204A180E2363004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519204A180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519204B180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192049180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D519204C180E2363004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CripOCRTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519204D180E2363004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519204C180E2363004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D519204E180E2363004C6B57</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D519204F180E2363004C6B57</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D5192050180E2363004C6B57</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D5192051180E2363004C6B57</string>
-				<string>D5192052180E2363004C6B57</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D5192051180E2363004C6B57</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5113A45FECC042C6A82CE032</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/zhaoyuli/sandbox/ocr/CripOCR</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CripOCR/CripOCR-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CripOCR/CripOCR-Info.plist</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D5192052180E2363004C6B57</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5113A45FECC042C6A82CE032</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/zhaoyuli/sandbox/ocr/CripOCR</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CripOCR/CripOCR-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CripOCR/CripOCR-Info.plist</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D5192053180E2363004C6B57</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D5192054180E2363004C6B57</string>
-				<string>D5192055180E2363004C6B57</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D5192054180E2363004C6B57</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/CripOCR.app/CripOCR</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CripOCR/CripOCR-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>CripOCRTests/CripOCRTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D5192055180E2363004C6B57</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/CripOCR.app/CripOCR</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CripOCR/CripOCR-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CripOCRTests/CripOCRTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D5192056180E24E8004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>TesseractOCR.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192057180E24E8004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192056180E24E8004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192058180E27BB004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>compiled.mach-o.dylib</string>
-			<key>name</key>
-			<string>libstdc++.6.0.9.dylib</string>
-			<key>path</key>
-			<string>usr/lib/libstdc++.6.0.9.dylib</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D5192059180E27BB004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5192058180E27BB004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D519205A180E28DE004C6B57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D519205B180E28DE004C6B57</string>
-				<string>D519205C180E28DE004C6B57</string>
-				<string>D519205D180E28DE004C6B57</string>
-				<string>D519205E180E28DE004C6B57</string>
-				<string>D519205F180E28DE004C6B57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>tessdata</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519205B180E28DE004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>chi_sim.traineddata</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519205C180E28DE004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>eng.traineddata</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519205D180E28DE004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>equ.traineddata</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519205E180E28DE004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>grc.traineddata</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D519205F180E28DE004C6B57</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>ita.traineddata</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5192060180E28DE004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519205B180E28DE004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192061180E28DE004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519205C180E28DE004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192062180E28DE004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519205D180E28DE004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192063180E28DE004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519205E180E28DE004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D5192064180E28DE004C6B57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D519205F180E28DE004C6B57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F452EA0FCA644EE9B61C8D77</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D5192016180E2362004C6B57</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		745194A57EF240C197CB16B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A4B3606D604D9B9627FA86 /* libPods.a */; };
+		D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
+		D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192023180E2363004C6B57 /* CoreGraphics.framework */; };
+		D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192025180E2363004C6B57 /* UIKit.framework */; };
+		D519202C180E2363004C6B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D519202A180E2363004C6B57 /* InfoPlist.strings */; };
+		D519202E180E2363004C6B57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D519202D180E2363004C6B57 /* main.m */; };
+		D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192031180E2363004C6B57 /* CTLAppDelegate.m */; };
+		D5192035180E2363004C6B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5192033180E2363004C6B57 /* Main.storyboard */; };
+		D5192038180E2363004C6B57 /* CTLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5192037180E2363004C6B57 /* CTLViewController.mm */; };
+		D519203A180E2363004C6B57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5192039180E2363004C6B57 /* Images.xcassets */; };
+		D5192041180E2363004C6B57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192040180E2363004C6B57 /* XCTest.framework */; };
+		D5192042180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
+		D5192043180E2363004C6B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192025180E2363004C6B57 /* UIKit.framework */; };
+		D519204B180E2363004C6B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5192049180E2363004C6B57 /* InfoPlist.strings */; };
+		D519204D180E2363004C6B57 /* CripOCRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D519204C180E2363004C6B57 /* CripOCRTests.m */; };
+		D5192057180E24E8004C6B57 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192056180E24E8004C6B57 /* TesseractOCR.framework */; };
+		D5192060180E28DE004C6B57 /* chi_sim.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205B180E28DE004C6B57 /* chi_sim.traineddata */; };
+		D5192061180E28DE004C6B57 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205C180E28DE004C6B57 /* eng.traineddata */; };
+		D5192062180E28DE004C6B57 /* equ.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205D180E28DE004C6B57 /* equ.traineddata */; };
+		D5192063180E28DE004C6B57 /* grc.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205E180E28DE004C6B57 /* grc.traineddata */; };
+		D5192064180E28DE004C6B57 /* ita.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205F180E28DE004C6B57 /* ita.traineddata */; };
+		D5192070180E3B67004C6B57 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5192044180E2363004C6B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5192016180E2362004C6B57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D519201D180E2362004C6B57;
+			remoteInfo = CripOCR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13A4B3606D604D9B9627FA86 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5113A45FECC042C6A82CE032 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D519201E180E2363004C6B57 /* CripOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CripOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5192021180E2363004C6B57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5192023180E2363004C6B57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5192025180E2363004C6B57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5192029180E2363004C6B57 /* CripOCR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CripOCR-Info.plist"; sourceTree = "<group>"; };
+		D519202B180E2363004C6B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D519202D180E2363004C6B57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D519202F180E2363004C6B57 /* CripOCR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CripOCR-Prefix.pch"; sourceTree = "<group>"; };
+		D5192030180E2363004C6B57 /* CTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLAppDelegate.h; sourceTree = "<group>"; };
+		D5192031180E2363004C6B57 /* CTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLAppDelegate.m; sourceTree = "<group>"; };
+		D5192034180E2363004C6B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5192036180E2363004C6B57 /* CTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLViewController.h; sourceTree = "<group>"; };
+		D5192037180E2363004C6B57 /* CTLViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CTLViewController.mm; sourceTree = "<group>"; };
+		D5192039180E2363004C6B57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D519203F180E2363004C6B57 /* CripOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CripOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5192040180E2363004C6B57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5192048180E2363004C6B57 /* CripOCRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CripOCRTests-Info.plist"; sourceTree = "<group>"; };
+		D519204A180E2363004C6B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D519204C180E2363004C6B57 /* CripOCRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CripOCRTests.m; sourceTree = "<group>"; };
+		D5192056180E24E8004C6B57 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		D519205B180E28DE004C6B57 /* chi_sim.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = chi_sim.traineddata; sourceTree = "<group>"; };
+		D519205C180E28DE004C6B57 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
+		D519205D180E28DE004C6B57 /* equ.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = equ.traineddata; sourceTree = "<group>"; };
+		D519205E180E28DE004C6B57 /* grc.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = grc.traineddata; sourceTree = "<group>"; };
+		D519205F180E28DE004C6B57 /* ita.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = ita.traineddata; sourceTree = "<group>"; };
+		D5192065180E37B5004C6B57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D519201B180E2362004C6B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192070180E3B67004C6B57 /* libstdc++.6.0.9.dylib in Frameworks */,
+				D5192057180E24E8004C6B57 /* TesseractOCR.framework in Frameworks */,
+				D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */,
+				D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */,
+				D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */,
+				745194A57EF240C197CB16B0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D519203C180E2363004C6B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192041180E2363004C6B57 /* XCTest.framework in Frameworks */,
+				D5192043180E2363004C6B57 /* UIKit.framework in Frameworks */,
+				D5192042180E2363004C6B57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5192015180E2362004C6B57 = {
+			isa = PBXGroup;
+			children = (
+				D519205A180E28DE004C6B57 /* tessdata */,
+				D5192027180E2363004C6B57 /* CripOCR */,
+				D5192046180E2363004C6B57 /* CripOCRTests */,
+				D5192020180E2363004C6B57 /* Frameworks */,
+				D519201F180E2363004C6B57 /* Products */,
+				5113A45FECC042C6A82CE032 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D519201F180E2363004C6B57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D519201E180E2363004C6B57 /* CripOCR.app */,
+				D519203F180E2363004C6B57 /* CripOCRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5192020180E2363004C6B57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5192065180E37B5004C6B57 /* QuartzCore.framework */,
+				D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */,
+				D5192056180E24E8004C6B57 /* TesseractOCR.framework */,
+				D5192021180E2363004C6B57 /* Foundation.framework */,
+				D5192023180E2363004C6B57 /* CoreGraphics.framework */,
+				D5192025180E2363004C6B57 /* UIKit.framework */,
+				D5192040180E2363004C6B57 /* XCTest.framework */,
+				13A4B3606D604D9B9627FA86 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5192027180E2363004C6B57 /* CripOCR */ = {
+			isa = PBXGroup;
+			children = (
+				D5192030180E2363004C6B57 /* CTLAppDelegate.h */,
+				D5192031180E2363004C6B57 /* CTLAppDelegate.m */,
+				D5192033180E2363004C6B57 /* Main.storyboard */,
+				D5192036180E2363004C6B57 /* CTLViewController.h */,
+				D5192037180E2363004C6B57 /* CTLViewController.mm */,
+				D5192039180E2363004C6B57 /* Images.xcassets */,
+				D5192028180E2363004C6B57 /* Supporting Files */,
+			);
+			path = CripOCR;
+			sourceTree = "<group>";
+		};
+		D5192028180E2363004C6B57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5192029180E2363004C6B57 /* CripOCR-Info.plist */,
+				D519202A180E2363004C6B57 /* InfoPlist.strings */,
+				D519202D180E2363004C6B57 /* main.m */,
+				D519202F180E2363004C6B57 /* CripOCR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5192046180E2363004C6B57 /* CripOCRTests */ = {
+			isa = PBXGroup;
+			children = (
+				D519204C180E2363004C6B57 /* CripOCRTests.m */,
+				D5192047180E2363004C6B57 /* Supporting Files */,
+			);
+			path = CripOCRTests;
+			sourceTree = "<group>";
+		};
+		D5192047180E2363004C6B57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5192048180E2363004C6B57 /* CripOCRTests-Info.plist */,
+				D5192049180E2363004C6B57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D519205A180E28DE004C6B57 /* tessdata */ = {
+			isa = PBXGroup;
+			children = (
+				D519205B180E28DE004C6B57 /* chi_sim.traineddata */,
+				D519205C180E28DE004C6B57 /* eng.traineddata */,
+				D519205D180E28DE004C6B57 /* equ.traineddata */,
+				D519205E180E28DE004C6B57 /* grc.traineddata */,
+				D519205F180E28DE004C6B57 /* ita.traineddata */,
+			);
+			path = tessdata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D519201D180E2362004C6B57 /* CripOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5192050180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCR" */;
+			buildPhases = (
+				F452EA0FCA644EE9B61C8D77 /* Check Pods Manifest.lock */,
+				D519201A180E2362004C6B57 /* Sources */,
+				D519201B180E2362004C6B57 /* Frameworks */,
+				D519201C180E2362004C6B57 /* Resources */,
+				460B0AFA4FF4417D843E7D27 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CripOCR;
+			productName = CripOCR;
+			productReference = D519201E180E2363004C6B57 /* CripOCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D519203E180E2363004C6B57 /* CripOCRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5192053180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCRTests" */;
+			buildPhases = (
+				D519203B180E2363004C6B57 /* Sources */,
+				D519203C180E2363004C6B57 /* Frameworks */,
+				D519203D180E2363004C6B57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5192045180E2363004C6B57 /* PBXTargetDependency */,
+			);
+			name = CripOCRTests;
+			productName = CripOCRTests;
+			productReference = D519203F180E2363004C6B57 /* CripOCRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5192016180E2362004C6B57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CTL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Zhaoyu Li";
+				TargetAttributes = {
+					D519203E180E2363004C6B57 = {
+						TestTargetID = D519201D180E2362004C6B57;
+					};
+				};
+			};
+			buildConfigurationList = D5192019180E2362004C6B57 /* Build configuration list for PBXProject "CripOCR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5192015180E2362004C6B57;
+			productRefGroup = D519201F180E2363004C6B57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D519201D180E2362004C6B57 /* CripOCR */,
+				D519203E180E2363004C6B57 /* CripOCRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D519201C180E2362004C6B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192061180E28DE004C6B57 /* eng.traineddata in Resources */,
+				D5192063180E28DE004C6B57 /* grc.traineddata in Resources */,
+				D519203A180E2363004C6B57 /* Images.xcassets in Resources */,
+				D519202C180E2363004C6B57 /* InfoPlist.strings in Resources */,
+				D5192064180E28DE004C6B57 /* ita.traineddata in Resources */,
+				D5192062180E28DE004C6B57 /* equ.traineddata in Resources */,
+				D5192060180E28DE004C6B57 /* chi_sim.traineddata in Resources */,
+				D5192035180E2363004C6B57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D519203D180E2363004C6B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D519204B180E2363004C6B57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		460B0AFA4FF4417D843E7D27 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F452EA0FCA644EE9B61C8D77 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D519201A180E2362004C6B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
+				D519202E180E2363004C6B57 /* main.m in Sources */,
+				D5192038180E2363004C6B57 /* CTLViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D519203B180E2363004C6B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D519204D180E2363004C6B57 /* CripOCRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5192045180E2363004C6B57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D519201D180E2362004C6B57 /* CripOCR */;
+			targetProxy = D5192044180E2363004C6B57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D519202A180E2363004C6B57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D519202B180E2363004C6B57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5192033180E2363004C6B57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5192034180E2363004C6B57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5192049180E2363004C6B57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D519204A180E2363004C6B57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D519204E180E2363004C6B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D519204F180E2363004C6B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5192051180E2363004C6B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5113A45FECC042C6A82CE032 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				INFOPLIST_FILE = "CripOCR/CripOCR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5192052180E2363004C6B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5113A45FECC042C6A82CE032 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				INFOPLIST_FILE = "CripOCR/CripOCR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5192054180E2363004C6B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CripOCR.app/CripOCR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CripOCRTests/CripOCRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5192055180E2363004C6B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CripOCR.app/CripOCR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				INFOPLIST_FILE = "CripOCRTests/CripOCRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5192019180E2362004C6B57 /* Build configuration list for PBXProject "CripOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D519204E180E2363004C6B57 /* Debug */,
+				D519204F180E2363004C6B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5192050180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5192051180E2363004C6B57 /* Debug */,
+				D5192052180E2363004C6B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5192053180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5192054180E2363004C6B57 /* Debug */,
+				D5192055180E2363004C6B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5192016180E2362004C6B57 /* Project object */;
+}

@@ -8,7 +8,6 @@
 
 #import "CTLViewController.h"
 #import <TesseractOCR/TesseractOCR.h>
-#import "GPUImage.h"
 #import <dispatch/dispatch.h>
 #import "MBProgressHUD.h"
 
@@ -16,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
+@property (strong, nonatomic) UIImage *originImg;
 @end
 
 @implementation CTLViewController
@@ -44,6 +44,7 @@
     UIImage *image = info[UIImagePickerControllerEditedImage];
     if (!image) image = info[UIImagePickerControllerOriginalImage];
     self.photo.image = image;
+    self.originImg = image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.resultText animated:YES];
@@ -64,8 +65,10 @@
             [hud hide:YES];
         });
     });
-    
-    }
+}
 
+- (IBAction)intensifyImg:(id)sender {
+
+}
 
 @end
