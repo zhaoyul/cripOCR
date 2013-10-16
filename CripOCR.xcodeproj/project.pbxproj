@@ -28,7 +28,9 @@
 		D5192062180E28DE004C6B57 /* equ.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205D180E28DE004C6B57 /* equ.traineddata */; };
 		D5192063180E28DE004C6B57 /* grc.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205E180E28DE004C6B57 /* grc.traineddata */; };
 		D5192064180E28DE004C6B57 /* ita.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205F180E28DE004C6B57 /* ita.traineddata */; };
-		D5192070180E3B67004C6B57 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */; };
+		D5701132180E459E00F289F3 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5701131180E459E00F289F3 /* libstdc++.dylib */; };
+		D5701133180EBB3000F289F3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */; };
+		D5701135180EBE6B00F289F3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5701134180EBE6B00F289F3 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,7 @@
 		D5192030180E2363004C6B57 /* CTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLAppDelegate.h; sourceTree = "<group>"; };
 		D5192031180E2363004C6B57 /* CTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLAppDelegate.m; sourceTree = "<group>"; };
 		D5192034180E2363004C6B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D5192036180E2363004C6B57 /* CTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLViewController.h; sourceTree = "<group>"; };
+		D5192036180E2363004C6B57 /* CTLViewController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CTLViewController.hpp; sourceTree = "<group>"; };
 		D5192037180E2363004C6B57 /* CTLViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CTLViewController.mm; sourceTree = "<group>"; };
 		D5192039180E2363004C6B57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D519203F180E2363004C6B57 /* CripOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CripOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,9 @@
 		D519205E180E28DE004C6B57 /* grc.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = grc.traineddata; sourceTree = "<group>"; };
 		D519205F180E28DE004C6B57 /* ita.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = ita.traineddata; sourceTree = "<group>"; };
 		D5192065180E37B5004C6B57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D5192071180E43DD004C6B57 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D5701131180E459E00F289F3 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		D5701134180EBE6B00F289F3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5192070180E3B67004C6B57 /* libstdc++.6.0.9.dylib in Frameworks */,
+				D5701135180EBE6B00F289F3 /* opencv2.framework in Frameworks */,
+				D5701133180EBB3000F289F3 /* libstdc++.6.0.9.dylib in Frameworks */,
+				D5701132180E459E00F289F3 /* libstdc++.dylib in Frameworks */,
 				D5192057180E24E8004C6B57 /* TesseractOCR.framework in Frameworks */,
 				D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */,
 				D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */,
@@ -124,6 +131,9 @@
 		D5192020180E2363004C6B57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5701134180EBE6B00F289F3 /* opencv2.framework */,
+				D5701131180E459E00F289F3 /* libstdc++.dylib */,
+				D5192071180E43DD004C6B57 /* libc++.dylib */,
 				D5192065180E37B5004C6B57 /* QuartzCore.framework */,
 				D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */,
 				D5192056180E24E8004C6B57 /* TesseractOCR.framework */,
@@ -142,7 +152,7 @@
 				D5192030180E2363004C6B57 /* CTLAppDelegate.h */,
 				D5192031180E2363004C6B57 /* CTLAppDelegate.m */,
 				D5192033180E2363004C6B57 /* Main.storyboard */,
-				D5192036180E2363004C6B57 /* CTLViewController.h */,
+				D5192036180E2363004C6B57 /* CTLViewController.hpp */,
 				D5192037180E2363004C6B57 /* CTLViewController.mm */,
 				D5192039180E2363004C6B57 /* Images.xcassets */,
 				D5192028180E2363004C6B57 /* Supporting Files */,
@@ -386,8 +396,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -427,8 +437,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -463,10 +473,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+					/Users/zhaoyuli/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
@@ -487,10 +498,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+					/Users/zhaoyuli/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
