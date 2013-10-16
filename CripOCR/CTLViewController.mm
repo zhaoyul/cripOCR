@@ -10,6 +10,7 @@
 #import <TesseractOCR/TesseractOCR.h>
 #import "GPUImage.h"
 #import <dispatch/dispatch.h>
+#import "MBProgressHUD.h"
 
 @interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -45,10 +46,12 @@
     self.photo.image = image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.cengling.crip.textRec", NULL);
-    dispatch_async(backgroundQueue, ^(void) {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.resultText animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"照片识别中";
+    
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
-        //    [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
         [tesseract setImage:image];
         [tesseract recognize];
         NSString *recoText = [tesseract recognizedText];
@@ -58,6 +61,7 @@
         NSLog(@"Tesseract's version:%@", version);
         dispatch_async(dispatch_get_main_queue(), ^(void) {
             self.resultText.text =recoText;
+            [hud hide:YES];
         });
     });
     
