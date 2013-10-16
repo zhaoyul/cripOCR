@@ -8,6 +8,8 @@
 
 #import "CTLViewController.h"
 #import <TesseractOCR/TesseractOCR.h>
+#import "GPUImage.h"
+#import <dispatch/dispatch.h>
 
 @interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -43,17 +45,23 @@
     self.photo.image = image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
-    //    [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
-    [tesseract setImage:image];
-    [tesseract recognize];
-    NSString *recoText = [tesseract recognizedText];
-    NSLog(@"%@", recoText);
-    [tesseract clear];
-    self.resultText.text =recoText;
-    NSString *version = [Tesseract version];
-    NSLog(@"Tesseract's version:%@", version);
-}
+    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.cengling.crip.textRec", NULL);
+    dispatch_async(backgroundQueue, ^(void) {
+        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
+        //    [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
+        [tesseract setImage:image];
+        [tesseract recognize];
+        NSString *recoText = [tesseract recognizedText];
+        NSLog(@"%@", recoText);
+        [tesseract clear];
+        NSString *version = [Tesseract version];
+        NSLog(@"Tesseract's version:%@", version);
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            self.resultText.text =recoText;
+        });
+    });
+    
+    }
 
 
 @end
