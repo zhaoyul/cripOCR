@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
+		D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192023180E2363004C6B57 /* CoreGraphics.framework */; };
+		D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192025180E2363004C6B57 /* UIKit.framework */; };
+		D519202C180E2363004C6B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D519202A180E2363004C6B57 /* InfoPlist.strings */; };
+		D519202E180E2363004C6B57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D519202D180E2363004C6B57 /* main.m */; };
+		D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192031180E2363004C6B57 /* CTLAppDelegate.m */; };
+		D5192035180E2363004C6B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5192033180E2363004C6B57 /* Main.storyboard */; };
+		D5192038180E2363004C6B57 /* CTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192037180E2363004C6B57 /* CTLViewController.m */; };
+		D519203A180E2363004C6B57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5192039180E2363004C6B57 /* Images.xcassets */; };
+		D5192041180E2363004C6B57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192040180E2363004C6B57 /* XCTest.framework */; };
+		D5192042180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
+		D5192043180E2363004C6B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192025180E2363004C6B57 /* UIKit.framework */; };
+		D519204B180E2363004C6B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5192049180E2363004C6B57 /* InfoPlist.strings */; };
+		D519204D180E2363004C6B57 /* CripOCRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D519204C180E2363004C6B57 /* CripOCRTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5192044180E2363004C6B57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5192016180E2362004C6B57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D519201D180E2362004C6B57;
+			remoteInfo = CripOCR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D519201E180E2363004C6B57 /* CripOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CripOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5192021180E2363004C6B57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5192023180E2363004C6B57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5192025180E2363004C6B57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5192029180E2363004C6B57 /* CripOCR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CripOCR-Info.plist"; sourceTree = "<group>"; };
+		D519202B180E2363004C6B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D519202D180E2363004C6B57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D519202F180E2363004C6B57 /* CripOCR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CripOCR-Prefix.pch"; sourceTree = "<group>"; };
+		D5192030180E2363004C6B57 /* CTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLAppDelegate.h; sourceTree = "<group>"; };
+		D5192031180E2363004C6B57 /* CTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLAppDelegate.m; sourceTree = "<group>"; };
+		D5192034180E2363004C6B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5192036180E2363004C6B57 /* CTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLViewController.h; sourceTree = "<group>"; };
+		D5192037180E2363004C6B57 /* CTLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLViewController.m; sourceTree = "<group>"; };
+		D5192039180E2363004C6B57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D519203F180E2363004C6B57 /* CripOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CripOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5192040180E2363004C6B57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5192048180E2363004C6B57 /* CripOCRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CripOCRTests-Info.plist"; sourceTree = "<group>"; };
+		D519204A180E2363004C6B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D519204C180E2363004C6B57 /* CripOCRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CripOCRTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D519201B180E2362004C6B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */,
+				D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */,
+				D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D519203C180E2363004C6B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192041180E2363004C6B57 /* XCTest.framework in Frameworks */,
+				D5192043180E2363004C6B57 /* UIKit.framework in Frameworks */,
+				D5192042180E2363004C6B57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5192015180E2362004C6B57 = {
+			isa = PBXGroup;
+			children = (
+				D5192027180E2363004C6B57 /* CripOCR */,
+				D5192046180E2363004C6B57 /* CripOCRTests */,
+				D5192020180E2363004C6B57 /* Frameworks */,
+				D519201F180E2363004C6B57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D519201F180E2363004C6B57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D519201E180E2363004C6B57 /* CripOCR.app */,
+				D519203F180E2363004C6B57 /* CripOCRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5192020180E2363004C6B57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5192021180E2363004C6B57 /* Foundation.framework */,
+				D5192023180E2363004C6B57 /* CoreGraphics.framework */,
+				D5192025180E2363004C6B57 /* UIKit.framework */,
+				D5192040180E2363004C6B57 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5192027180E2363004C6B57 /* CripOCR */ = {
+			isa = PBXGroup;
+			children = (
+				D5192030180E2363004C6B57 /* CTLAppDelegate.h */,
+				D5192031180E2363004C6B57 /* CTLAppDelegate.m */,
+				D5192033180E2363004C6B57 /* Main.storyboard */,
+				D5192036180E2363004C6B57 /* CTLViewController.h */,
+				D5192037180E2363004C6B57 /* CTLViewController.m */,
+				D5192039180E2363004C6B57 /* Images.xcassets */,
+				D5192028180E2363004C6B57 /* Supporting Files */,
+			);
+			path = CripOCR;
+			sourceTree = "<group>";
+		};
+		D5192028180E2363004C6B57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5192029180E2363004C6B57 /* CripOCR-Info.plist */,
+				D519202A180E2363004C6B57 /* InfoPlist.strings */,
+				D519202D180E2363004C6B57 /* main.m */,
+				D519202F180E2363004C6B57 /* CripOCR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5192046180E2363004C6B57 /* CripOCRTests */ = {
+			isa = PBXGroup;
+			children = (
+				D519204C180E2363004C6B57 /* CripOCRTests.m */,
+				D5192047180E2363004C6B57 /* Supporting Files */,
+			);
+			path = CripOCRTests;
+			sourceTree = "<group>";
+		};
+		D5192047180E2363004C6B57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5192048180E2363004C6B57 /* CripOCRTests-Info.plist */,
+				D5192049180E2363004C6B57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D519201D180E2362004C6B57 /* CripOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5192050180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCR" */;
+			buildPhases = (
+				D519201A180E2362004C6B57 /* Sources */,
+				D519201B180E2362004C6B57 /* Frameworks */,
+				D519201C180E2362004C6B57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CripOCR;
+			productName = CripOCR;
+			productReference = D519201E180E2363004C6B57 /* CripOCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D519203E180E2363004C6B57 /* CripOCRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5192053180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCRTests" */;
+			buildPhases = (
+				D519203B180E2363004C6B57 /* Sources */,
+				D519203C180E2363004C6B57 /* Frameworks */,
+				D519203D180E2363004C6B57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5192045180E2363004C6B57 /* PBXTargetDependency */,
+			);
+			name = CripOCRTests;
+			productName = CripOCRTests;
+			productReference = D519203F180E2363004C6B57 /* CripOCRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5192016180E2362004C6B57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CTL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Zhaoyu Li";
+				TargetAttributes = {
+					D519203E180E2363004C6B57 = {
+						TestTargetID = D519201D180E2362004C6B57;
+					};
+				};
+			};
+			buildConfigurationList = D5192019180E2362004C6B57 /* Build configuration list for PBXProject "CripOCR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5192015180E2362004C6B57;
+			productRefGroup = D519201F180E2363004C6B57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D519201D180E2362004C6B57 /* CripOCR */,
+				D519203E180E2363004C6B57 /* CripOCRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D519201C180E2362004C6B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D519203A180E2363004C6B57 /* Images.xcassets in Resources */,
+				D519202C180E2363004C6B57 /* InfoPlist.strings in Resources */,
+				D5192035180E2363004C6B57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D519203D180E2363004C6B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D519204B180E2363004C6B57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D519201A180E2362004C6B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
+				D519202E180E2363004C6B57 /* main.m in Sources */,
+				D5192038180E2363004C6B57 /* CTLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D519203B180E2363004C6B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D519204D180E2363004C6B57 /* CripOCRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5192045180E2363004C6B57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D519201D180E2362004C6B57 /* CripOCR */;
+			targetProxy = D5192044180E2363004C6B57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D519202A180E2363004C6B57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D519202B180E2363004C6B57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5192033180E2363004C6B57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5192034180E2363004C6B57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5192049180E2363004C6B57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D519204A180E2363004C6B57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D519204E180E2363004C6B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D519204F180E2363004C6B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5192051180E2363004C6B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				INFOPLIST_FILE = "CripOCR/CripOCR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5192052180E2363004C6B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				INFOPLIST_FILE = "CripOCR/CripOCR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5192054180E2363004C6B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CripOCR.app/CripOCR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CripOCRTests/CripOCRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5192055180E2363004C6B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CripOCR.app/CripOCR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
+				INFOPLIST_FILE = "CripOCRTests/CripOCRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5192019180E2362004C6B57 /* Build configuration list for PBXProject "CripOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D519204E180E2363004C6B57 /* Debug */,
+				D519204F180E2363004C6B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5192050180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5192051180E2363004C6B57 /* Debug */,
+				D5192052180E2363004C6B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5192053180E2363004C6B57 /* Build configuration list for PBXNativeTarget "CripOCRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5192054180E2363004C6B57 /* Debug */,
+				D5192055180E2363004C6B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5192016180E2362004C6B57 /* Project object */;
+}
