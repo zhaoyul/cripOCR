@@ -51,6 +51,8 @@
     NSLog(@"%@", recoText);
     [tesseract clear];
     self.resultText.text =recoText;
+    NSString *version = [Tesseract version];
+    NSLog(@"Tesseract's version:%@", version);
 }
 
 
