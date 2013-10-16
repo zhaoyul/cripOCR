@@ -14,13 +14,20 @@
 		D519202E180E2363004C6B57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D519202D180E2363004C6B57 /* main.m */; };
 		D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192031180E2363004C6B57 /* CTLAppDelegate.m */; };
 		D5192035180E2363004C6B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5192033180E2363004C6B57 /* Main.storyboard */; };
-		D5192038180E2363004C6B57 /* CTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192037180E2363004C6B57 /* CTLViewController.m */; };
+		D5192038180E2363004C6B57 /* CTLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5192037180E2363004C6B57 /* CTLViewController.mm */; };
 		D519203A180E2363004C6B57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5192039180E2363004C6B57 /* Images.xcassets */; };
 		D5192041180E2363004C6B57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192040180E2363004C6B57 /* XCTest.framework */; };
 		D5192042180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
 		D5192043180E2363004C6B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192025180E2363004C6B57 /* UIKit.framework */; };
 		D519204B180E2363004C6B57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5192049180E2363004C6B57 /* InfoPlist.strings */; };
 		D519204D180E2363004C6B57 /* CripOCRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D519204C180E2363004C6B57 /* CripOCRTests.m */; };
+		D5192057180E24E8004C6B57 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192056180E24E8004C6B57 /* TesseractOCR.framework */; };
+		D5192059180E27BB004C6B57 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */; };
+		D5192060180E28DE004C6B57 /* chi_sim.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205B180E28DE004C6B57 /* chi_sim.traineddata */; };
+		D5192061180E28DE004C6B57 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205C180E28DE004C6B57 /* eng.traineddata */; };
+		D5192062180E28DE004C6B57 /* equ.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205D180E28DE004C6B57 /* equ.traineddata */; };
+		D5192063180E28DE004C6B57 /* grc.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205E180E28DE004C6B57 /* grc.traineddata */; };
+		D5192064180E28DE004C6B57 /* ita.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205F180E28DE004C6B57 /* ita.traineddata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +53,20 @@
 		D5192031180E2363004C6B57 /* CTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLAppDelegate.m; sourceTree = "<group>"; };
 		D5192034180E2363004C6B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5192036180E2363004C6B57 /* CTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLViewController.h; sourceTree = "<group>"; };
-		D5192037180E2363004C6B57 /* CTLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLViewController.m; sourceTree = "<group>"; };
+		D5192037180E2363004C6B57 /* CTLViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CTLViewController.mm; sourceTree = "<group>"; };
 		D5192039180E2363004C6B57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D519203F180E2363004C6B57 /* CripOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CripOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5192040180E2363004C6B57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D5192048180E2363004C6B57 /* CripOCRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CripOCRTests-Info.plist"; sourceTree = "<group>"; };
 		D519204A180E2363004C6B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D519204C180E2363004C6B57 /* CripOCRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CripOCRTests.m; sourceTree = "<group>"; };
+		D5192056180E24E8004C6B57 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		D519205B180E28DE004C6B57 /* chi_sim.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = chi_sim.traineddata; sourceTree = "<group>"; };
+		D519205C180E28DE004C6B57 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
+		D519205D180E28DE004C6B57 /* equ.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = equ.traineddata; sourceTree = "<group>"; };
+		D519205E180E28DE004C6B57 /* grc.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = grc.traineddata; sourceTree = "<group>"; };
+		D519205F180E28DE004C6B57 /* ita.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = ita.traineddata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5192059180E27BB004C6B57 /* libstdc++.6.0.9.dylib in Frameworks */,
+				D5192057180E24E8004C6B57 /* TesseractOCR.framework in Frameworks */,
 				D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */,
 				D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */,
 				D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */,
@@ -82,6 +98,7 @@
 		D5192015180E2362004C6B57 = {
 			isa = PBXGroup;
 			children = (
+				D519205A180E28DE004C6B57 /* tessdata */,
 				D5192027180E2363004C6B57 /* CripOCR */,
 				D5192046180E2363004C6B57 /* CripOCRTests */,
 				D5192020180E2363004C6B57 /* Frameworks */,
@@ -101,6 +118,8 @@
 		D5192020180E2363004C6B57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */,
+				D5192056180E24E8004C6B57 /* TesseractOCR.framework */,
 				D5192021180E2363004C6B57 /* Foundation.framework */,
 				D5192023180E2363004C6B57 /* CoreGraphics.framework */,
 				D5192025180E2363004C6B57 /* UIKit.framework */,
@@ -116,7 +135,7 @@
 				D5192031180E2363004C6B57 /* CTLAppDelegate.m */,
 				D5192033180E2363004C6B57 /* Main.storyboard */,
 				D5192036180E2363004C6B57 /* CTLViewController.h */,
-				D5192037180E2363004C6B57 /* CTLViewController.m */,
+				D5192037180E2363004C6B57 /* CTLViewController.mm */,
 				D5192039180E2363004C6B57 /* Images.xcassets */,
 				D5192028180E2363004C6B57 /* Supporting Files */,
 			);
@@ -150,6 +169,18 @@
 				D5192049180E2363004C6B57 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D519205A180E28DE004C6B57 /* tessdata */ = {
+			isa = PBXGroup;
+			children = (
+				D519205B180E28DE004C6B57 /* chi_sim.traineddata */,
+				D519205C180E28DE004C6B57 /* eng.traineddata */,
+				D519205D180E28DE004C6B57 /* equ.traineddata */,
+				D519205E180E28DE004C6B57 /* grc.traineddata */,
+				D519205F180E28DE004C6B57 /* ita.traineddata */,
+			);
+			path = tessdata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +260,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5192061180E28DE004C6B57 /* eng.traineddata in Resources */,
+				D5192063180E28DE004C6B57 /* grc.traineddata in Resources */,
 				D519203A180E2363004C6B57 /* Images.xcassets in Resources */,
 				D519202C180E2363004C6B57 /* InfoPlist.strings in Resources */,
+				D5192064180E28DE004C6B57 /* ita.traineddata in Resources */,
+				D5192062180E28DE004C6B57 /* equ.traineddata in Resources */,
+				D5192060180E28DE004C6B57 /* chi_sim.traineddata in Resources */,
 				D5192035180E2363004C6B57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +288,7 @@
 			files = (
 				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
 				D519202E180E2363004C6B57 /* main.m in Sources */,
-				D5192038180E2363004C6B57 /* CTLViewController.m in Sources */,
+				D5192038180E2363004C6B57 /* CTLViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +373,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -370,6 +407,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -381,9 +419,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
 				INFOPLIST_FILE = "CripOCR/CripOCR-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,9 +438,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoyuli/sandbox/ocr/CripOCR,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CripOCR/CripOCR-Prefix.pch";
 				INFOPLIST_FILE = "CripOCR/CripOCR-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
