@@ -1,0 +1,4 @@
+cripOCR
+=======
+
+cripOCR research project
