@@ -58,6 +58,7 @@
 		D5895180180F53ED0071F5C1 /* libMagickWand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895169180F53ED0071F5C1 /* libMagickWand.a */; };
 		D5895181180F53ED0071F5C1 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D589516A180F53ED0071F5C1 /* libpng.a */; };
 		D5895182180F53ED0071F5C1 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D589516B180F53ED0071F5C1 /* libtiff.a */; };
+		D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895183180F54B40071F5C1 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +264,7 @@
 		D5895169180F53ED0071F5C1 /* libMagickWand.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMagickWand.a; sourceTree = "<group>"; };
 		D589516A180F53ED0071F5C1 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		D589516B180F53ED0071F5C1 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
+		D5895183180F54B40071F5C1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */,
 				D589517F180F53ED0071F5C1 /* libMagickWand-Q8.a in Frameworks */,
 				D589517E180F53ED0071F5C1 /* libMagickCore.a in Frameworks */,
 				D5701138180EC1C400F289F3 /* opencv2.framework in Frameworks */,
@@ -326,6 +329,7 @@
 		D5192020180E2363004C6B57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5895183180F54B40071F5C1 /* libxml2.dylib */,
 				D58950CE180F53DF0071F5C1 /* IM */,
 				D5701136180EC1A800F289F3 /* opencv2.framework */,
 				D5701134180EBE6B00F289F3 /* opencv2.framework */,
