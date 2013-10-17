@@ -100,7 +100,7 @@
     self.photo.image = [ip processBinarize:self.originImg];
 }
 - (IBAction)restore:(id)sender {
-    self.photo.image = self.originImg;`7
+    self.photo.image = self.originImg;
 }
 
 double angle( cv::Point pt1, cv::Point pt2, cv::Point pt0 ) {
