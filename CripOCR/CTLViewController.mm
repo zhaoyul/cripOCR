@@ -84,31 +84,6 @@
     self.photo.image = [[UIImage alloc] initWithCVMat:paperMat];
 }
 
-- (cv::Mat)cvMatFromUIImage:(UIImage *)image
-{
-    CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
-    CGFloat cols = image.size.width;
-    CGFloat rows = image.size.height;
-    
-    cv::Mat cvMat(rows, cols, CV_8UC4); // 8 bits per component, 4 channels
-    
-    CGContextRef contextRef = CGBitmapContextCreate(cvMat.data,                 // Pointer to  data
-                                                    cols,                       // Width of bitmap
-                                                    rows,                       // Height of bitmap
-                                                    8,                          // Bits per component
-                                                    cvMat.step[0],              // Bytes per row
-                                                    colorSpace,                 // Colorspace
-                                                    kCGImageAlphaNoneSkipLast |
-                                                    kCGBitmapByteOrderDefault); // Bitmap info flags
-    
-    CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), image.CGImage);
-    CGContextRelease(contextRef);
-    CGColorSpaceRelease(colorSpace);
-    
-    return cvMat;
-}
-
-
 double angle( cv::Point pt1, cv::Point pt2, cv::Point pt0 ) {
     double dx1 = pt1.x - pt0.x;
     double dy1 = pt1.y - pt0.y;
