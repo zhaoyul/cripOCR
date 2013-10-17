@@ -10,6 +10,7 @@
 #import <TesseractOCR/TesseractOCR.h>
 #import <dispatch/dispatch.h>
 #import "MBProgressHUD.h"
+#import "UIImage+OpenCV.h"
 
 @interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -72,19 +73,15 @@
 }
 
 - (IBAction)intensifyImg:(id)sender {
-    cv::Mat inputMat = [self cvMatFromUIImage:self.originImg];
-    cv::Mat greyMat;
-    cv::cvtColor(inputMat, greyMat, CV_BGR2GRAY);
-    UIImage *greyImg = [self UIImageFromCVMat:greyMat];
-    self.photo.image = greyImg;
+    cv::Mat grayMat = [self.originImg CVGrayscaleMat];
+    self.photo.image = [[UIImage alloc] initWithCVMat:grayMat];
 }
+
 - (IBAction)cropPaper:(id)sender {
-    cv::Mat inputMat = [self cvMatFromUIImage:self.originImg];
-    cv::Mat greyMat;
+    cv::Mat inputMat = [self.originImg CVMat];
     std::vector<std::vector<cv::Point> > rect = [self findSquaresInImage:inputMat];
     cv::Mat paperMat = debugSquares(rect, inputMat);
-    UIImage *PaperImg = [self UIImageFromCVMat:paperMat];
-    self.photo.image = PaperImg;
+    self.photo.image = [[UIImage alloc] initWithCVMat:paperMat];
 }
 
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image
@@ -110,66 +107,7 @@
     
     return cvMat;
 }
-- (cv::Mat)cvMatGrayFromUIImage:(UIImage *)image
-{
-    CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
-    CGFloat cols = image.size.width;
-    CGFloat rows = image.size.height;
-    
-    cv::Mat cvMat(rows, cols, CV_8UC1); // 8 bits per component, 1 channels
-    
-    CGContextRef contextRef = CGBitmapContextCreate(cvMat.data,                 // Pointer to data
-                                                    cols,                       // Width of bitmap
-                                                    rows,                       // Height of bitmap
-                                                    8,                          // Bits per component
-                                                    cvMat.step[0],              // Bytes per row
-                                                    colorSpace,                 // Colorspace
-                                                    kCGImageAlphaNoneSkipLast |
-                                                    kCGBitmapByteOrderDefault); // Bitmap info flags
-    
-    CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), image.CGImage);
-    CGContextRelease(contextRef);
-    CGColorSpaceRelease(colorSpace);
-    
-    return cvMat;
-}
 
--(UIImage *)UIImageFromCVMat:(cv::Mat)cvMat
-{
-    NSData *data = [NSData dataWithBytes:cvMat.data length:cvMat.elemSize()*cvMat.total()];
-    CGColorSpaceRef colorSpace;
-    
-    if (cvMat.elemSize() == 1) {
-        colorSpace = CGColorSpaceCreateDeviceGray();
-    } else {
-        colorSpace = CGColorSpaceCreateDeviceRGB();
-    }
-    
-    CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
-    
-    // Creating CGImage from cv::Mat
-    CGImageRef imageRef = CGImageCreate(cvMat.cols,                                 //width
-                                        cvMat.rows,                                 //height
-                                        8,                                          //bits per component
-                                        8 * cvMat.elemSize(),                       //bits per pixel
-                                        cvMat.step[0],                            //bytesPerRow
-                                        colorSpace,                                 //colorspace
-                                        kCGImageAlphaNone|kCGBitmapByteOrderDefault,// bitmap info
-                                        provider,                                   //CGDataProviderRef
-                                        NULL,                                       //decode
-                                        false,                                      //should interpolate
-                                        kCGRenderingIntentDefault                   //intent
-                                        );
-    
-    
-    // Getting UIImage from CGImage
-    UIImage *finalImage = [UIImage imageWithCGImage:imageRef];
-    CGImageRelease(imageRef);
-    CGDataProviderRelease(provider);
-    CGColorSpaceRelease(colorSpace);
-    
-    return finalImage;
-}
 
 double angle( cv::Point pt1, cv::Point pt2, cv::Point pt0 ) {
     double dx1 = pt1.x - pt0.x;
