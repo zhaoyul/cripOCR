@@ -2,8 +2,8 @@
 //  UIImage+operation.h
 //  infojobOCR
 //
-//  Created by Paolo Tagliani on 09/06/12.
-//  Copyright (c) 2012 26775. All rights reserved.
+//  Created by Kevin Li on 2013-10-17
+//  Copyright (c) 2012 Centling, co,. ltd. All rights reserved.
 //
 
 
