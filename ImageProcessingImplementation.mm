@@ -9,6 +9,7 @@
 #import "ImageProcessingImplementation.h"
 #import "ImageProcessor.h"
 #import "UIImage+OpenCV.h"
+#import "ImageProcessingImplementation.h"
 
 @implementation ImageProcessingImplementation
 

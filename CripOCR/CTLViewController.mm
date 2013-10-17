@@ -11,6 +11,7 @@
 #import <dispatch/dispatch.h>
 #import "MBProgressHUD.h"
 #import "UIImage+OpenCV.h"
+#import "ImageProcessingImplementation.h"
 
 @interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -56,8 +57,7 @@
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
-        [tesseract setImage:self.originImg
-         ];
+        [tesseract setImage:self.photo.image];
         [tesseract recognize];
         NSString *recoText = [tesseract recognizedText];
         NSLog(@"%@", recoText);
@@ -82,6 +82,25 @@
     std::vector<std::vector<cv::Point> > rect = [self findSquaresInImage:inputMat];
     cv::Mat paperMat = debugSquares(rect, inputMat);
     self.photo.image = [[UIImage alloc] initWithCVMat:paperMat];
+}
+- (IBAction)rotation:(id)sender {
+    ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
+    self.photo.image = [ip processRotation:self.originImg];
+}
+- (IBAction)histogram:(id)sender {
+    ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
+    self.photo.image = [ip processHistogram:self.originImg];
+}
+- (IBAction)filter:(id)sender {
+    ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
+    self.photo.image = [ip processFilter:self.originImg];
+}
+- (IBAction)binarize:(id)sender {
+    ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
+    self.photo.image = [ip processBinarize:self.originImg];
+}
+- (IBAction)restore:(id)sender {
+    self.photo.image = self.originImg;`7
 }
 
 double angle( cv::Point pt1, cv::Point pt2, cv::Point pt0 ) {
