@@ -59,6 +59,7 @@
 		D5895181180F53ED0071F5C1 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D589516A180F53ED0071F5C1 /* libpng.a */; };
 		D5895182180F53ED0071F5C1 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D589516B180F53ED0071F5C1 /* libtiff.a */; };
 		D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895183180F54B40071F5C1 /* libxml2.dylib */; };
+		D59906B81810D0A7004AB77C /* chi_sim.user-words in Resources */ = {isa = PBXBuildFile; fileRef = D59906B71810D0A7004AB77C /* chi_sim.user-words */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +266,7 @@
 		D589516A180F53ED0071F5C1 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		D589516B180F53ED0071F5C1 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
 		D5895183180F54B40071F5C1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D59906B71810D0A7004AB77C /* chi_sim.user-words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chi_sim.user-words"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				D519205B180E28DE004C6B57 /* chi_sim.traineddata */,
+				D59906B71810D0A7004AB77C /* chi_sim.user-words */,
 				D519205C180E28DE004C6B57 /* eng.traineddata */,
 				D519205D180E28DE004C6B57 /* equ.traineddata */,
 				D519205E180E28DE004C6B57 /* grc.traineddata */,
@@ -681,6 +684,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Zhaoyu Li";
 				TargetAttributes = {
+					D519201D180E2362004C6B57 = {
+						DevelopmentTeam = BZ99LJ547K;
+					};
 					D519203E180E2363004C6B57 = {
 						TestTargetID = D519201D180E2362004C6B57;
 					};
@@ -729,6 +735,7 @@
 				D5895174180F53ED0071F5C1 /* mime.xml in Resources */,
 				D5895175180F53ED0071F5C1 /* policy.xml in Resources */,
 				D5192060180E28DE004C6B57 /* chi_sim.traineddata in Resources */,
+				D59906B81810D0A7004AB77C /* chi_sim.user-words in Resources */,
 				D5895176180F53ED0071F5C1 /* quantization-table.xml in Resources */,
 				D5192035180E2363004C6B57 /* Main.storyboard in Resources */,
 				D5895177180F53ED0071F5C1 /* thresholds.xml in Resources */,
@@ -924,6 +931,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/zhaoyuli/sandbox/ocr/CripOCR,
@@ -938,6 +947,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -949,6 +959,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/zhaoyuli/sandbox/ocr/CripOCR,
@@ -963,6 +975,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
