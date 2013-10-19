@@ -60,6 +60,7 @@
 		D5895182180F53ED0071F5C1 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D589516B180F53ED0071F5C1 /* libtiff.a */; };
 		D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895183180F54B40071F5C1 /* libxml2.dylib */; };
 		D59906B81810D0A7004AB77C /* chi_sim.user-words in Resources */ = {isa = PBXBuildFile; fileRef = D59906B71810D0A7004AB77C /* chi_sim.user-words */; };
+		D59906BA1810D9CA004AB77C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59906B91810D9CA004AB77C /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +268,7 @@
 		D589516B180F53ED0071F5C1 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
 		D5895183180F54B40071F5C1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		D59906B71810D0A7004AB77C /* chi_sim.user-words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chi_sim.user-words"; sourceTree = "<group>"; };
+		D59906B91810D9CA004AB77C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59906BA1810D9CA004AB77C /* MobileCoreServices.framework in Frameworks */,
 				D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */,
 				D589517F180F53ED0071F5C1 /* libMagickWand-Q8.a in Frameworks */,
 				D589517E180F53ED0071F5C1 /* libMagickCore.a in Frameworks */,
@@ -331,6 +334,7 @@
 		D5192020180E2363004C6B57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D59906B91810D9CA004AB77C /* MobileCoreServices.framework */,
 				D5895183180F54B40071F5C1 /* libxml2.dylib */,
 				D58950CE180F53DF0071F5C1 /* IM */,
 				D5701136180EC1A800F289F3 /* opencv2.framework */,

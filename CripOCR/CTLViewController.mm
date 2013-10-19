@@ -12,8 +12,10 @@
 #import "MBProgressHUD.h"
 #import "UIImage+OpenCV.h"
 #import "ImageProcessingImplementation.h"
+#import <QuartzCore/QuartzCore.h>
+#import <MobileCoreServices/MobileCoreServices.h> 
 
-@interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
@@ -34,11 +36,44 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)takePhoto:(id)sender {
-    UIImagePickerController *pikcer  = [[UIImagePickerController alloc] init];
-    pikcer.allowsEditing = YES;
-    pikcer.delegate = self;
-    pikcer.sourceType = UIImagePickerControllerSourceTypeCamera;
-    [self presentViewController:pikcer animated:YES completion:nil];
+//    UIImagePickerController *pikcer  = [[UIImagePickerController alloc] init];
+//    pikcer.allowsEditing = YES;
+//    pikcer.delegate = self;
+//    pikcer.sourceType = UIImagePickerControllerSourceTypeCamera;
+//    [self presentViewController:pikcer animated:YES completion:nil];
+
+        UIActionSheet *menu = [[UIActionSheet alloc]
+                               initWithTitle: @""
+                               delegate:self
+                               cancelButtonTitle:@"取消"
+                               destructiveButtonTitle:nil
+                               otherButtonTitles:@"拍照",@"从相册上传", nil];
+        [menu showInView:[UIApplication sharedApplication].keyWindow];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex==0) {
+        [self presentImagePicker:UIImagePickerControllerSourceTypeCamera];
+    }else if(buttonIndex==1){
+        [self presentImagePicker:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+    }else if(buttonIndex==2){
+    }
+}
+
+- (void) presentImagePicker:(UIImagePickerControllerSourceType)sourceType {
+    if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
+        NSArray* availableMediaTypes = [UIImagePickerController availableMediaTypesForSourceType: sourceType];
+        if ([availableMediaTypes containsObject:(NSString*)kUTTypeImage]) {
+            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+            picker.sourceType = sourceType;
+            picker.mediaTypes = @[(NSString*) kUTTypeImage];
+            picker.allowsEditing = YES;
+            picker.delegate = self;
+            [self presentViewController:picker animated:YES completion:nil];
+            
+        }
+    }
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
@@ -50,6 +85,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
  }
+
 - (IBAction)textRecg:(id)sender {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.resultText animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
