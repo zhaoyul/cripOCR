@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 @property (strong, nonatomic) UIImage *originImg;
+@property (strong, nonatomic) MAImagePickerController *imagePicker;
 @end
 
 @implementation CTLViewController
@@ -28,6 +29,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    if (self.imagePicker) {
+        self.photo.image = self.imagePicker.adjustedImg;
+        self.originImg = self.imagePicker.adjustedImg;
+
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,6 +56,9 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:path])
     {
         NSLog(@"File Found at %@", path);
+        NSURL *fileUrl=[NSURL fileURLWithPath:path];
+        NSData *data = [NSData dataWithContentsOfURL:fileUrl];
+        self.photo.image = [UIImage imageWithData:data];
         
     }
     else
@@ -58,14 +70,17 @@
 }
 
 - (IBAction)takePhoto:(id)sender {
-    MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
+    self.imagePicker = [[MAImagePickerController alloc] init];
     
-    [imagePicker setDelegate:self];
-    imagePicker.pickerSourceType = MAImagePickerControllerSourceTypeCamera;
+    [self.imagePicker setDelegate:self];
+    self.imagePicker.pickerSourceType = MAImagePickerControllerSourceTypeCamera;
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.imagePicker];
     
-    [self presentViewController:navigationController animated:YES completion:nil];
+    [self presentViewController:navigationController animated:YES completion:^{
+    }];
+    
+    
 
 }
 

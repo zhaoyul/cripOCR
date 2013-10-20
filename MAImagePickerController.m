@@ -265,6 +265,8 @@
     [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
     [self.navigationController pushViewController:adjustViewController animated:NO];
     
+    self.adjustedImg = adjustViewController.adjustedImage;
+    
 }
 
 

@@ -47,4 +47,6 @@ typedef NS_ENUM(NSInteger, MAImagePickerControllerSourceType)
 
 @property (strong, nonatomic) MPVolumeView *volumeView;
 
+@property (strong, nonatomic) UIImage *adjustedImg;
+
 @end

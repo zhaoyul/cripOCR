@@ -8,34 +8,29 @@
 
 #import "UIImage+OpenCV.h"
 
-static void ProviderReleaseDataNOP(void *info, const void *data, size_t size)
-{
-    // Do not release memory
-    return;
-}
-
 @implementation UIImage (UIImage_OpenCV)
 
 -(cv::Mat)CVMat
 {
     
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(self.CGImage);
-    CGFloat cols = self.size.width;
-    CGFloat rows = self.size.height;
+    CGFloat cols = self.size.height;
+    CGFloat rows = self.size.width;
     
     cv::Mat cvMat(rows, cols, CV_8UC4); // 8 bits per component, 4 channels
     
     CGContextRef contextRef = CGBitmapContextCreate(cvMat.data,                 // Pointer to backing data
-                                                    cols,                      // Width of bitmap
-                                                    rows,                     // Height of bitmap
+                                                    cols,                       // Width of bitmap
+                                                    rows,                       // Height of bitmap
                                                     8,                          // Bits per component
                                                     cvMat.step[0],              // Bytes per row
                                                     colorSpace,                 // Colorspace
                                                     kCGImageAlphaNoneSkipLast |
-                                                    kCGBitmapByteOrderDefault); // Bitmap info flags
+                                                    kCGBitmapByteOrderDefault);
     
     CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), self.CGImage);
     CGContextRelease(contextRef);
+    
     
     cv::Mat cvMatTest;
     cv::transpose(cvMat, cvMatTest);

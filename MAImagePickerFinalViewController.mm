@@ -19,17 +19,6 @@
 
 @implementation MAImagePickerFinalViewController
 
-@synthesize firstSettingIcon = _firstSettingIcon;
-@synthesize secondSettingIcon = _secondSettingIcon;
-@synthesize thirdSettingIcon = _thirdSettingIcon;
-@synthesize fourthSettingIcon = _fourthSettingIcon;
-
-@synthesize activityIndicator = _activityIndicator;
-@synthesize progressIndicator = _progressIndicator;
-
-@synthesize finalImageView = _finalImageView;
-@synthesize adjustedImage = _adjustedImage;
-@synthesize sourceImage = _sourceImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
