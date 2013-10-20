@@ -6,5 +6,6 @@ set -x
 ##wordlist2dawg ../chi_sim.user-words chi_sim.word-dawg .unicharset
 mv .unicharset chi_sim.unicharset
 combine_tessdata -o chi_sim.traineddata chi_sim.unicharset 
-#combine_tessdata -o chi_sim.traineddata chi_sim.word-dawg
+mv .unicharambigs chi_sim.unicharambigs
+combine_tessdata -o chi_sim.traineddata chi_sim.unicharambigs 
 cp -f chi_sim.traineddata ../
