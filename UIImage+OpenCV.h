@@ -14,6 +14,8 @@
 -(id)initWithCVMat:(const cv::Mat&)cvMat;
 
 @property(nonatomic, readonly) cv::Mat CVMat;
+@property(nonatomic, readonly) cv::Mat CVMatFromAdjustedImage;
 @property(nonatomic, readonly) cv::Mat CVGrayscaleMat;
+@property(nonatomic, readonly) cv::Mat CVGrayscaleMatFromAdjustedImage;
 
 @end

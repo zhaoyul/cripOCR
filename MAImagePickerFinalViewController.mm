@@ -10,6 +10,7 @@
 
 #import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
+#import "UIImage+OpenCV.h"
 #import "MAOpenCV.hpp"
 
 @interface MAImagePickerFinalViewController ()
@@ -141,16 +142,16 @@
             {
                 if (_imageFrameEdited)
                 {
-                    original = [MAOpenCV cvMatGrayFromAdjustedUIImage:_sourceImage];
+                    original = [_sourceImage CVGrayscaleMatFromAdjustedImage];
                 }
                 else
                 {
-                    original = [MAOpenCV cvMatGrayFromUIImage:_sourceImage];
+                    original = [_sourceImage CVGrayscaleMat];
                 }
                 
                 cv::GaussianBlur(original, original, cvSize(11,11), 0);
                 cv::adaptiveThreshold(original, original, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 5, 2);
-                _adjustedImage = [MAOpenCV UIImageFromCVMat:original];
+                _adjustedImage = [[UIImage alloc] initWithCVMat:original];
                 
                 original.release();
             }
@@ -159,11 +160,11 @@
             {
                 if (_imageFrameEdited)
                 {
-                    original = [MAOpenCV cvMatGrayFromAdjustedUIImage:_sourceImage];
+                    original = [_sourceImage CVGrayscaleMatFromAdjustedImage];
                 }
                 else
                 {
-                    original = [MAOpenCV cvMatGrayFromUIImage:_sourceImage];
+                    original = [_sourceImage CVGrayscaleMat];
                 }
                 
                 cv::Mat new_image = cv::Mat::zeros( original.size(), original.type() );
@@ -171,7 +172,7 @@
                 original.convertTo(new_image, -1, 1.4, -50);
                 original.release();
                 
-                _adjustedImage = [MAOpenCV UIImageFromCVMat:new_image];
+                _adjustedImage = [[UIImage alloc] initWithCVMat:new_image];
                 new_image.release();
             }
             
@@ -179,11 +180,11 @@
             {
                 if (_imageFrameEdited)
                 {
-                    original = [MAOpenCV cvMatFromAdjustedUIImage:_sourceImage];
+                    original = [_sourceImage CVMatFromAdjustedImage];
                 }
                 else
                 {
-                    original = [MAOpenCV cvMatFromUIImage:_sourceImage];
+                    original = [_sourceImage CVMat];
                 }
                 
                 cv::Mat new_image = cv::Mat::zeros( original.size(), original.type() );
@@ -192,7 +193,7 @@
                 
                 original.release();
                 
-                _adjustedImage = [MAOpenCV UIImageFromCVMat:new_image];
+                _adjustedImage = [[UIImage alloc] initWithCVMat:new_image];
                 new_image.release();
             }
             

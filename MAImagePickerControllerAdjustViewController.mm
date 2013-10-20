@@ -11,6 +11,7 @@
 
 #import "MAOpenCV.hpp"
 #import "UIImageView+ContentFrame.h"
+#import "UIImage+OpenCV.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MAImagePickerControllerAdjustViewController ()
@@ -106,7 +107,7 @@
 
 - (void)detectEdges
 {
-    cv::Mat original = [MAOpenCV cvMatFromUIImage:_adjustedImage];
+    cv::Mat original = [_adjustedImage CVMat];
     CGSize targetSize = _sourceImageView.contentSize;
     cv::resize(original, original, cvSize(targetSize.width, targetSize.height));
     
@@ -243,11 +244,11 @@
         dst[3].y = maxHeight - 1;
         
         cv::Mat undistorted = cv::Mat( cvSize(maxWidth,maxHeight), CV_8UC1);
-        cv::Mat original = [MAOpenCV cvMatFromUIImage:_adjustedImage];
+        cv::Mat original = [_adjustedImage CVMat];
         cv::warpPerspective(original, undistorted, cv::getPerspectiveTransform(src, dst), cvSize(maxWidth, maxHeight));
         original.release();
         
-        _adjustedImage = [MAOpenCV UIImageFromCVMat:undistorted];
+        _adjustedImage = [[UIImage alloc] initWithCVMat:undistorted];
         undistorted.release();
         edited = YES;
     }

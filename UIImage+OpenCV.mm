@@ -37,31 +37,64 @@ static void ProviderReleaseDataNOP(void *info, const void *data, size_t size)
     CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), self.CGImage);
     CGContextRelease(contextRef);
     
-    return cvMat;
+    cv::Mat cvMatTest;
+    cv::transpose(cvMat, cvMatTest);
+    
+    cvMat.release();
+    
+    cv::flip(cvMatTest, cvMatTest, 1);
+    return cvMatTest;
 }
 
 -(cv::Mat)CVGrayscaleMat
 {
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    cv::Mat cvMat = [self CVMat];
+    cv::Mat grayMat;
+    if ( cvMat.channels() == 1 ) {
+        grayMat = cvMat;
+    }
+    else {
+        grayMat = cv :: Mat( cvMat.rows,cvMat.cols, CV_8UC1 );
+        cv::cvtColor( cvMat, grayMat, CV_BGR2GRAY );
+    }
+    return grayMat;
+}
+
+-(cv::Mat) CVGrayscaleMatFromAdjustedImage{
+    cv::Mat cvMat = [self CVMatFromAdjustedImage];
+    cv::Mat grayMat;
+    if ( cvMat.channels() == 1 ) {
+        grayMat = cvMat;
+    }
+    else {
+        grayMat = cv :: Mat( cvMat.rows,cvMat.cols, CV_8UC1 );
+        cv::cvtColor( cvMat, grayMat, CV_BGR2GRAY );
+    }
+    return grayMat;
+}
+
+
+- (cv::Mat) CVMatFromAdjustedImage{
+    CGColorSpaceRef colorSpace = CGImageGetColorSpace(self.CGImage);
     CGFloat cols = self.size.width;
     CGFloat rows = self.size.height;
     
-    cv::Mat cvMat = cv::Mat(rows, cols, CV_8UC1); // 8 bits per component, 1 channel
- 
+    cv::Mat cvMat(rows, cols, CV_8UC4); // 8 bits per component, 4 channels
+    
     CGContextRef contextRef = CGBitmapContextCreate(cvMat.data,                 // Pointer to backing data
                                                     cols,                      // Width of bitmap
                                                     rows,                     // Height of bitmap
                                                     8,                          // Bits per component
                                                     cvMat.step[0],              // Bytes per row
                                                     colorSpace,                 // Colorspace
-                                                    kCGImageAlphaNone |
+                                                    kCGImageAlphaNoneSkipLast |
                                                     kCGBitmapByteOrderDefault); // Bitmap info flags
     
     CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), self.CGImage);
     CGContextRelease(contextRef);
-    CGColorSpaceRelease(colorSpace);
     
     return cvMat;
+
 }
 
 + (UIImage *)imageWithCVMat:(const cv::Mat&)cvMat
