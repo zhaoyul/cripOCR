@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Zhaoyu Li. All rights reserved.
 //
 
-#import "CTLViewController.hpp"
+#import "CTLViewController.h"
 #import <TesseractOCR/TesseractOCR.h>
 #import <dispatch/dispatch.h>
 #import "MBProgressHUD.h"
-#import "UIImage+OpenCV.h"
 #import "ImageProcessingImplementation.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MobileCoreServices/MobileCoreServices.h> 
+#import "MAImagePickerController.h"
 
-@interface CTLViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
+@interface CTLViewController () <MAImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
@@ -35,46 +35,40 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)takePhoto:(id)sender {
-//    UIImagePickerController *pikcer  = [[UIImagePickerController alloc] init];
-//    pikcer.allowsEditing = YES;
-//    pikcer.delegate = self;
-//    pikcer.sourceType = UIImagePickerControllerSourceTypeCamera;
-//    [self presentViewController:pikcer animated:YES completion:nil];
-
-        UIActionSheet *menu = [[UIActionSheet alloc]
-                               initWithTitle: @""
-                               delegate:self
-                               cancelButtonTitle:@"取消"
-                               destructiveButtonTitle:nil
-                               otherButtonTitles:@"拍照",@"从相册上传", nil];
-        [menu showInView:[UIApplication sharedApplication].keyWindow];
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)imagePickerDidCancel
 {
-    if (buttonIndex==0) {
-        [self presentImagePicker:UIImagePickerControllerSourceTypeCamera];
-    }else if(buttonIndex==1){
-        [self presentImagePicker:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
-    }else if(buttonIndex==2){
-    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void) presentImagePicker:(UIImagePickerControllerSourceType)sourceType {
-    if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
-        NSArray* availableMediaTypes = [UIImagePickerController availableMediaTypesForSourceType: sourceType];
-        if ([availableMediaTypes containsObject:(NSString*)kUTTypeImage]) {
-            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-            picker.sourceType = sourceType;
-            picker.mediaTypes = @[(NSString*) kUTTypeImage];
-            picker.allowsEditing = YES;
-            picker.delegate = self;
-            [self presentViewController:picker animated:YES completion:nil];
-            
-        }
+- (void)imagePickerDidChooseImageWithPath:(NSString *)path
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    {
+        NSLog(@"File Found at %@", path);
+        
     }
+    else
+    {
+        NSLog(@"No File Found at %@", path);
+    }
+    
+    [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 }
+
+- (IBAction)takePhoto:(id)sender {
+    MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
+    
+    [imagePicker setDelegate:self];
+    imagePicker.pickerSourceType = MAImagePickerControllerSourceTypeCamera;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
+
+}
+
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     
@@ -109,8 +103,8 @@
 }
 
 - (IBAction)intensifyImg:(id)sender {
-    cv::Mat grayMat = [self.originImg CVGrayscaleMat];
-    self.photo.image = [[UIImage alloc] initWithCVMat:grayMat];
+//    cv::Mat grayMat = [self.originImg CVGrayscaleMat];
+//    self.photo.image = [[UIImage alloc] initWithCVMat:grayMat];
 }
 
 - (IBAction)cropPaper:(id)sender {

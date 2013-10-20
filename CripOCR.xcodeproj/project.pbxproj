@@ -15,7 +15,7 @@
 		D519202E180E2363004C6B57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D519202D180E2363004C6B57 /* main.m */; };
 		D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192031180E2363004C6B57 /* CTLAppDelegate.m */; };
 		D5192035180E2363004C6B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5192033180E2363004C6B57 /* Main.storyboard */; };
-		D5192038180E2363004C6B57 /* CTLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5192037180E2363004C6B57 /* CTLViewController.mm */; };
+		D5192038180E2363004C6B57 /* CTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5192037180E2363004C6B57 /* CTLViewController.m */; };
 		D519203A180E2363004C6B57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5192039180E2363004C6B57 /* Images.xcassets */; };
 		D5192041180E2363004C6B57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192040180E2363004C6B57 /* XCTest.framework */; };
 		D5192042180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
@@ -134,8 +134,8 @@
 		D5192030180E2363004C6B57 /* CTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLAppDelegate.h; sourceTree = "<group>"; };
 		D5192031180E2363004C6B57 /* CTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLAppDelegate.m; sourceTree = "<group>"; };
 		D5192034180E2363004C6B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D5192036180E2363004C6B57 /* CTLViewController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CTLViewController.hpp; sourceTree = "<group>"; };
-		D5192037180E2363004C6B57 /* CTLViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CTLViewController.mm; sourceTree = "<group>"; };
+		D5192036180E2363004C6B57 /* CTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLViewController.h; sourceTree = "<group>"; };
+		D5192037180E2363004C6B57 /* CTLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTLViewController.m; sourceTree = "<group>"; };
 		D5192039180E2363004C6B57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D519203F180E2363004C6B57 /* CripOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CripOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5192040180E2363004C6B57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -463,8 +463,8 @@
 				D5192030180E2363004C6B57 /* CTLAppDelegate.h */,
 				D5192031180E2363004C6B57 /* CTLAppDelegate.m */,
 				D5192033180E2363004C6B57 /* Main.storyboard */,
-				D5192036180E2363004C6B57 /* CTLViewController.hpp */,
-				D5192037180E2363004C6B57 /* CTLViewController.mm */,
+				D5192036180E2363004C6B57 /* CTLViewController.h */,
+				D5192037180E2363004C6B57 /* CTLViewController.m */,
 				D5192039180E2363004C6B57 /* Images.xcassets */,
 				D5192028180E2363004C6B57 /* Supporting Files */,
 			);
@@ -1037,7 +1037,7 @@
 				D5764034181382E8006ACC19 /* MAImagePickerFinalViewController.mm in Sources */,
 				D519202E180E2363004C6B57 /* main.m in Sources */,
 				D5701145180ED0BB00F289F3 /* UIImage+OpenCV.mm in Sources */,
-				D5192038180E2363004C6B57 /* CTLViewController.mm in Sources */,
+				D5192038180E2363004C6B57 /* CTLViewController.m in Sources */,
 				D5764030181382E8006ACC19 /* MAConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
