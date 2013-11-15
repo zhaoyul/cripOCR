@@ -1,5 +1,5 @@
 //
-//  MAConstants.h
+//  OcrConstants.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -14,6 +14,6 @@
 #define kCropButtonSize 200
 #define kActivityIndicatorSize 100
 
-@interface MAConstants : NSObject
+@interface OcrConstants : NSObject
 
 @end

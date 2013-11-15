@@ -1,5 +1,5 @@
 //
-//  MAImagePickerControllerAdjustViewController.h
+//  OcrImagePickerControllerAdjustViewController.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -10,15 +10,15 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MAConstants.h"
-#import "MADrawRect.h"
-#import "MAOpenCV.hpp"
+#import "OcrConstants.h"
+#import "OcrDrawRect.h"
+#import "OcrOpenCV.hpp"
 
 
 #import <opencv2/core/core.hpp>
 #import <opencv2/imgproc/imgproc.hpp>
 
-@interface MAImagePickerControllerAdjustViewController : UIViewController
+@interface OcrImagePickerControllerAdjustViewController : UIViewController
 {
     BOOL isGray;
 }
@@ -27,6 +27,6 @@
 @property (strong, nonatomic) UIToolbar *adjustToolBar;
 @property (strong, nonatomic) UIImage *sourceImage;
 @property (strong, nonatomic) UIImage *adjustedImage;
-@property (strong, nonatomic) MADrawRect *adjustRect;
+@property (strong, nonatomic) OcrDrawRect *adjustRect;
 
 @end

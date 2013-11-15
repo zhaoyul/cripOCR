@@ -1,13 +1,13 @@
 //
-//  MAConstants.m
+//  OcrConstants.m
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
 //  Copyright (c) 2012 Centling co,. ltd. All rights reserved.
 //
 
-#import "MAConstants.h"
+#import "OcrConstants.h"
 
-@implementation MAConstants
+@implementation OcrConstants
 
 @end

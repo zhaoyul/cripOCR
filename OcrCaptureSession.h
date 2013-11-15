@@ -1,5 +1,5 @@
 //
-//  MACaptureSession.h
+//  OcrCaptureSession.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -8,9 +8,9 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-#import "MAConstants.h"
+#import "OcrConstants.h"
 
-@interface MACaptureSession : NSObject
+@interface OcrCaptureSession : NSObject
 {
     BOOL flashOn;
 }

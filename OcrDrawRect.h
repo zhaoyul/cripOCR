@@ -1,5 +1,5 @@
 //
-//  MADrawRect.h
+//  OcrDrawRect.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MAConstants.h"
+#import "OcrConstants.h"
 
 //            cd
 //  d   -------------   c
@@ -22,7 +22,7 @@
 //
 // a = 1, b = 2, c = 3, d = 4
 
-@interface MADrawRect : UIView
+@interface OcrDrawRect : UIView
 {
     CGPoint touchOffset;
     CGPoint a;

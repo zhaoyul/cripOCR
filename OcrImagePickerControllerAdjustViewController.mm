@@ -1,25 +1,25 @@
 //
-//  MAImagePickerControllerAdjustViewController.m
+//  OcrImagePickerControllerAdjustViewController.m
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
 //  Copyright (c) 2012 Centling co,. ltd. All rights reserved.
 //
 
-#import "MAImagePickerControllerAdjustViewController.h"
-#import "MAImagePickerFinalViewController.h"
+#import "OcrImagePickerControllerAdjustViewController.h"
+#import "OcrImagePickerFinalViewController.h"
 
-#import "MAOpenCV.hpp"
+#import "OcrOpenCV.hpp"
 #import "UIImageView+ContentFrame.h"
 #import "UIImage+OpenCV.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface MAImagePickerControllerAdjustViewController ()
+@interface OcrImagePickerControllerAdjustViewController ()
 
 
 @end
 
-@implementation MAImagePickerControllerAdjustViewController
+@implementation OcrImagePickerControllerAdjustViewController
 
 @synthesize sourceImageView = _sourceImageView;
 @synthesize adjustToolBar = _adjustToolBar;
@@ -52,7 +52,7 @@
     [_sourceImageView setImage:_adjustedImage];
     [self.view addSubview:_sourceImageView];
     
-    _adjustRect= [[MADrawRect alloc] initWithFrame:_sourceImageView.contentFrame];
+    _adjustRect= [[OcrDrawRect alloc] initWithFrame:_sourceImageView.contentFrame];
     [self.view addSubview:_adjustRect];
     
     _adjustToolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - kCameraToolBarHeight, self.view.bounds.size.width, kCameraToolBarHeight)];
@@ -257,7 +257,7 @@
         edited = NO;
     }
     
-    MAImagePickerFinalViewController *finalView = [[MAImagePickerFinalViewController alloc] init];
+    OcrImagePickerFinalViewController *finalView = [[OcrImagePickerFinalViewController alloc] init];
     finalView.sourceImage = _adjustedImage;
     finalView.imageFrameEdited = edited;
     

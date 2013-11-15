@@ -1,23 +1,23 @@
 //
-//  MAImagePickerFinalViewController.m
+//  OcrImagePickerFinalViewController.m
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
 //  Copyright (c) 2012 Centling co,. ltd. All rights reserved.
 //
 
-#import "MAImagePickerFinalViewController.h"
+#import "OcrImagePickerFinalViewController.h"
 
 #import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIImage+OpenCV.h"
-#import "MAOpenCV.hpp"
+#import "OcrOpenCV.hpp"
 
-@interface MAImagePickerFinalViewController ()
+@interface OcrImagePickerFinalViewController ()
 
 @end
 
-@implementation MAImagePickerFinalViewController
+@implementation OcrImagePickerFinalViewController
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

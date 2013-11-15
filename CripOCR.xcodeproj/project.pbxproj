@@ -80,13 +80,13 @@
 		D576401A181382C2006ACC19 /* flash-on-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5763FED181382C2006ACC19 /* flash-on-button@2x.png */; };
 		D576401B181382C2006ACC19 /* toolbar-icon-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = D5763FEE181382C2006ACC19 /* toolbar-icon-crop.png */; };
 		D576401C181382C2006ACC19 /* toolbar-icon-crop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5763FEF181382C2006ACC19 /* toolbar-icon-crop@2x.png */; };
-		D576402F181382E8006ACC19 /* MACaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D576401E181382E8006ACC19 /* MACaptureSession.m */; };
-		D5764030181382E8006ACC19 /* MAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D5764020181382E8006ACC19 /* MAConstants.m */; };
-		D5764031181382E8006ACC19 /* MADrawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D5764022181382E8006ACC19 /* MADrawRect.m */; };
-		D5764032181382E8006ACC19 /* MAImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5764024181382E8006ACC19 /* MAImagePickerController.m */; };
-		D5764033181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5764026181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.mm */; };
-		D5764034181382E8006ACC19 /* MAImagePickerFinalViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5764028181382E8006ACC19 /* MAImagePickerFinalViewController.mm */; };
-		D5764035181382E8006ACC19 /* MAOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = D576402A181382E8006ACC19 /* MAOpenCV.mm */; };
+		D576402F181382E8006ACC19 /* OcrCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D576401E181382E8006ACC19 /* OcrCaptureSession.m */; };
+		D5764030181382E8006ACC19 /* OcrConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D5764020181382E8006ACC19 /* OcrConstants.m */; };
+		D5764031181382E8006ACC19 /* OcrDrawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D5764022181382E8006ACC19 /* OcrDrawRect.m */; };
+		D5764032181382E8006ACC19 /* OcrImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5764024181382E8006ACC19 /* OcrImagePickerController.m */; };
+		D5764033181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5764026181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.mm */; };
+		D5764034181382E8006ACC19 /* OcrImagePickerFinalViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5764028181382E8006ACC19 /* OcrImagePickerFinalViewController.mm */; };
+		D5764035181382E8006ACC19 /* OcrOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = D576402A181382E8006ACC19 /* OcrOpenCV.mm */; };
 		D5764036181382E8006ACC19 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = D576402C181382E8006ACC19 /* UIImage+fixOrientation.m */; };
 		D5764037181382E8006ACC19 /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D576402E181382E8006ACC19 /* UIImageView+ContentFrame.m */; };
 		D589516C180F53ED0071F5C1 /* coder.xml in Resources */ = {isa = PBXBuildFile; fileRef = D58950D1180F53ED0071F5C1 /* coder.xml */; };
@@ -208,20 +208,20 @@
 		D5763FED181382C2006ACC19 /* flash-on-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-on-button@2x.png"; sourceTree = "<group>"; };
 		D5763FEE181382C2006ACC19 /* toolbar-icon-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-icon-crop.png"; sourceTree = "<group>"; };
 		D5763FEF181382C2006ACC19 /* toolbar-icon-crop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-icon-crop@2x.png"; sourceTree = "<group>"; };
-		D576401D181382E8006ACC19 /* MACaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACaptureSession.h; sourceTree = "<group>"; };
-		D576401E181382E8006ACC19 /* MACaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACaptureSession.m; sourceTree = "<group>"; };
-		D576401F181382E8006ACC19 /* MAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAConstants.h; sourceTree = "<group>"; };
-		D5764020181382E8006ACC19 /* MAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAConstants.m; sourceTree = "<group>"; };
-		D5764021181382E8006ACC19 /* MADrawRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADrawRect.h; sourceTree = "<group>"; };
-		D5764022181382E8006ACC19 /* MADrawRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADrawRect.m; sourceTree = "<group>"; };
-		D5764023181382E8006ACC19 /* MAImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAImagePickerController.h; sourceTree = "<group>"; };
-		D5764024181382E8006ACC19 /* MAImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAImagePickerController.m; sourceTree = "<group>"; };
-		D5764025181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAImagePickerControllerAdjustViewController.h; sourceTree = "<group>"; };
-		D5764026181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAImagePickerControllerAdjustViewController.mm; sourceTree = "<group>"; };
-		D5764027181382E8006ACC19 /* MAImagePickerFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAImagePickerFinalViewController.h; sourceTree = "<group>"; };
-		D5764028181382E8006ACC19 /* MAImagePickerFinalViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAImagePickerFinalViewController.mm; sourceTree = "<group>"; };
-		D5764029181382E8006ACC19 /* MAOpenCV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MAOpenCV.hpp; sourceTree = "<group>"; };
-		D576402A181382E8006ACC19 /* MAOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAOpenCV.mm; sourceTree = "<group>"; };
+		D576401D181382E8006ACC19 /* OcrCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrCaptureSession.h; sourceTree = "<group>"; };
+		D576401E181382E8006ACC19 /* OcrCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcrCaptureSession.m; sourceTree = "<group>"; };
+		D576401F181382E8006ACC19 /* OcrConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrConstants.h; sourceTree = "<group>"; };
+		D5764020181382E8006ACC19 /* OcrConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcrConstants.m; sourceTree = "<group>"; };
+		D5764021181382E8006ACC19 /* OcrDrawRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrDrawRect.h; sourceTree = "<group>"; };
+		D5764022181382E8006ACC19 /* OcrDrawRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcrDrawRect.m; sourceTree = "<group>"; };
+		D5764023181382E8006ACC19 /* OcrImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrImagePickerController.h; sourceTree = "<group>"; };
+		D5764024181382E8006ACC19 /* OcrImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcrImagePickerController.m; sourceTree = "<group>"; };
+		D5764025181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrImagePickerControllerAdjustViewController.h; sourceTree = "<group>"; };
+		D5764026181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OcrImagePickerControllerAdjustViewController.mm; sourceTree = "<group>"; };
+		D5764027181382E8006ACC19 /* OcrImagePickerFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrImagePickerFinalViewController.h; sourceTree = "<group>"; };
+		D5764028181382E8006ACC19 /* OcrImagePickerFinalViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OcrImagePickerFinalViewController.mm; sourceTree = "<group>"; };
+		D5764029181382E8006ACC19 /* OcrOpenCV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OcrOpenCV.hpp; sourceTree = "<group>"; };
+		D576402A181382E8006ACC19 /* OcrOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OcrOpenCV.mm; sourceTree = "<group>"; };
 		D576402B181382E8006ACC19 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		D576402C181382E8006ACC19 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		D576402D181382E8006ACC19 /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
@@ -532,20 +532,20 @@
 		D5763FC2181382AC006ACC19 /* CTLImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				D576401D181382E8006ACC19 /* MACaptureSession.h */,
-				D576401E181382E8006ACC19 /* MACaptureSession.m */,
-				D576401F181382E8006ACC19 /* MAConstants.h */,
-				D5764020181382E8006ACC19 /* MAConstants.m */,
-				D5764021181382E8006ACC19 /* MADrawRect.h */,
-				D5764022181382E8006ACC19 /* MADrawRect.m */,
-				D5764023181382E8006ACC19 /* MAImagePickerController.h */,
-				D5764024181382E8006ACC19 /* MAImagePickerController.m */,
-				D5764025181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.h */,
-				D5764026181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.mm */,
-				D5764027181382E8006ACC19 /* MAImagePickerFinalViewController.h */,
-				D5764028181382E8006ACC19 /* MAImagePickerFinalViewController.mm */,
-				D5764029181382E8006ACC19 /* MAOpenCV.hpp */,
-				D576402A181382E8006ACC19 /* MAOpenCV.mm */,
+				D576401D181382E8006ACC19 /* OcrCaptureSession.h */,
+				D576401E181382E8006ACC19 /* OcrCaptureSession.m */,
+				D576401F181382E8006ACC19 /* OcrConstants.h */,
+				D5764020181382E8006ACC19 /* OcrConstants.m */,
+				D5764021181382E8006ACC19 /* OcrDrawRect.h */,
+				D5764022181382E8006ACC19 /* OcrDrawRect.m */,
+				D5764023181382E8006ACC19 /* OcrImagePickerController.h */,
+				D5764024181382E8006ACC19 /* OcrImagePickerController.m */,
+				D5764025181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.h */,
+				D5764026181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.mm */,
+				D5764027181382E8006ACC19 /* OcrImagePickerFinalViewController.h */,
+				D5764028181382E8006ACC19 /* OcrImagePickerFinalViewController.mm */,
+				D5764029181382E8006ACC19 /* OcrOpenCV.hpp */,
+				D576402A181382E8006ACC19 /* OcrOpenCV.mm */,
 				D576402B181382E8006ACC19 /* UIImage+fixOrientation.h */,
 				D576402C181382E8006ACC19 /* UIImage+fixOrientation.m */,
 				D576402D181382E8006ACC19 /* UIImageView+ContentFrame.h */,
@@ -1024,21 +1024,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5764036181382E8006ACC19 /* UIImage+fixOrientation.m in Sources */,
-				D5764035181382E8006ACC19 /* MAOpenCV.mm in Sources */,
+				D5764035181382E8006ACC19 /* OcrOpenCV.mm in Sources */,
 				D5764037181382E8006ACC19 /* UIImageView+ContentFrame.m in Sources */,
 				D5701143180ED0BB00F289F3 /* ImageProcessingImplementation.mm in Sources */,
 				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
-				D5764032181382E8006ACC19 /* MAImagePickerController.m in Sources */,
+				D5764032181382E8006ACC19 /* OcrImagePickerController.m in Sources */,
 				D5701144180ED0BB00F289F3 /* ImageProcessor.cpp in Sources */,
-				D5764031181382E8006ACC19 /* MADrawRect.m in Sources */,
-				D576402F181382E8006ACC19 /* MACaptureSession.m in Sources */,
+				D5764031181382E8006ACC19 /* OcrDrawRect.m in Sources */,
+				D576402F181382E8006ACC19 /* OcrCaptureSession.m in Sources */,
 				D5701146180ED0BB00F289F3 /* UIImage+operation.m in Sources */,
-				D5764033181382E8006ACC19 /* MAImagePickerControllerAdjustViewController.mm in Sources */,
-				D5764034181382E8006ACC19 /* MAImagePickerFinalViewController.mm in Sources */,
+				D5764033181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.mm in Sources */,
+				D5764034181382E8006ACC19 /* OcrImagePickerFinalViewController.mm in Sources */,
 				D519202E180E2363004C6B57 /* main.m in Sources */,
 				D5701145180ED0BB00F289F3 /* UIImage+OpenCV.mm in Sources */,
 				D5192038180E2363004C6B57 /* CTLViewController.m in Sources */,
-				D5764030181382E8006ACC19 /* MAConstants.m in Sources */,
+				D5764030181382E8006ACC19 /* OcrConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

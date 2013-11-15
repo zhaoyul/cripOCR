@@ -1,5 +1,5 @@
 //
-//  MAImagePickerFinalViewController.h
+//  OcrImagePickerFinalViewController.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MAConstants.h"
+#import "OcrConstants.h"
 
-@interface MAImagePickerFinalViewController : UIViewController <UIScrollViewDelegate>
+@interface OcrImagePickerFinalViewController : UIViewController <UIScrollViewDelegate>
 {
     int currentlySelected;
     UIImageOrientation sourceImageOrientation;

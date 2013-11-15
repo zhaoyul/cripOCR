@@ -1,22 +1,22 @@
 //
-//  MAImagePickerController.m
+//  OcrImagePickerController.m
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
 //  Copyright (c) 2012 Centling co,. ltd. All rights reserved.
 //
 
-#import "MAImagePickerController.h"
-#import "MAImagePickerControllerAdjustViewController.h"
+#import "OcrImagePickerController.h"
+#import "OcrImagePickerControllerAdjustViewController.h"
 
 #import "UIImage+fixOrientation.h"
 
 
-@interface MAImagePickerController ()
+@interface OcrImagePickerController ()
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo;
 @end
 
-@implementation MAImagePickerController
+@implementation OcrImagePickerController
 {
     BOOL volumeChangeOK;
 }
@@ -59,7 +59,7 @@
         [_volumeView sizeToFit];
         [self.view addSubview:_volumeView];
         
-        [self setCaptureManager:[[MACaptureSession alloc] init]];
+        [self setCaptureManager:[[OcrCaptureSession alloc] init]];
         [_captureManager addVideoInputFromCamera];
         [_captureManager addStillImageOutput];
         [_captureManager addVideoPreviewLayer];
@@ -133,7 +133,7 @@
         
         [self.view addSubview:_cameraToolbar];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(transitionToMAImagePickerControllerAdjustViewController) name:kImageCapturedSuccessfully object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(transitionToOcrImagePickerControllerAdjustViewController) name:kImageCapturedSuccessfully object:nil];
         
         _cameraPictureTakenFlash = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height -kCameraToolBarHeight)];
         [_cameraPictureTakenFlash setBackgroundColor:[UIColor colorWithRed:0.99f green:0.99f blue:1.00f alpha:1.00f]];
@@ -215,11 +215,11 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (void)transitionToMAImagePickerControllerAdjustViewController
+- (void)transitionToOcrImagePickerControllerAdjustViewController
 {
     [[_captureManager captureSession] stopRunning];
     
-    MAImagePickerControllerAdjustViewController *adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
+    OcrImagePickerControllerAdjustViewController *adjustViewController = [[OcrImagePickerControllerAdjustViewController alloc] init];
     adjustViewController.sourceImage = [[self captureManager] stillImage];
     
     [UIView animateWithDuration:0.05 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^
@@ -255,7 +255,7 @@
     imagePickerDismissed = YES;
     [self.navigationController popViewControllerAnimated:NO];
     
-    MAImagePickerControllerAdjustViewController *adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
+    OcrImagePickerControllerAdjustViewController *adjustViewController = [[OcrImagePickerControllerAdjustViewController alloc] init];
     adjustViewController.sourceImage = [[info objectForKey:UIImagePickerControllerOriginalImage] fixOrientation];
     
     CATransition* transition = [CATransition animation];

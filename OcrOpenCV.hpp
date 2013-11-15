@@ -1,5 +1,5 @@
 //
-//  MAOpenCV.h
+//  OcrOpenCV.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.

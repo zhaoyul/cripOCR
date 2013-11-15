@@ -1,15 +1,15 @@
 //
-//  MACaptureSession.m
+//  OcrCaptureSession.m
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
 //  Copyright (c) 2012 Centling co,. ltd. All rights reserved.
 //
 
-#import "MACaptureSession.h"
+#import "OcrCaptureSession.h"
 #import <ImageIO/ImageIO.h>
 
-@implementation MACaptureSession
+@implementation OcrCaptureSession
 
 @synthesize captureSession = _captureSession;
 @synthesize previewLayer = _previewLayer;

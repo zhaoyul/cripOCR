@@ -1,5 +1,5 @@
 //
-//  MADrawRect.m
+//  OcrDrawRect.m
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -20,9 +20,9 @@
 //
 // a = 1, b = 2, c = 3, d = 4
 
-#import "MADrawRect.h"
+#import "OcrDrawRect.h"
 
-@implementation MADrawRect
+@implementation OcrDrawRect
 
 @synthesize pointD = _pointD;
 @synthesize pointC = _pointC;

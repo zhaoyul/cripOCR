@@ -1,5 +1,5 @@
 //
-//  MAImagePickerController.h
+//  OcrImagePickerController.h
 //  instaoverlay
 //
 //  Created by Kevin Li on 2013-10-18.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MACaptureSession.h"
-#import "MAConstants.h"
+#import "OcrCaptureSession.h"
+#import "OcrConstants.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 typedef NS_ENUM(NSInteger, MAImagePickerControllerSourceType)
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, MAImagePickerControllerSourceType)
 
 @end
 
-@interface MAImagePickerController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface OcrImagePickerController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     BOOL flashIsOn;
     BOOL imagePickerDismissed;
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, MAImagePickerControllerSourceType)
 
 @property (nonatomic,assign) id<MAImagePickerControllerDelegate> delegate;
 
-@property (strong, nonatomic) MACaptureSession *captureManager;
+@property (strong, nonatomic) OcrCaptureSession *captureManager;
 @property (strong, nonatomic) UIToolbar *cameraToolbar;
 @property (strong, nonatomic) UIBarButtonItem *flashButton;
 @property (strong, nonatomic) UIBarButtonItem *pictureButton;

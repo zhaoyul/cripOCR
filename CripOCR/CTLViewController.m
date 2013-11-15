@@ -13,14 +13,14 @@
 #import "ImageProcessingImplementation.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MobileCoreServices/MobileCoreServices.h> 
-#import "MAImagePickerController.h"
+#import "OcrImagePickerController.h"
 
 @interface CTLViewController () <MAImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 @property (strong, nonatomic) UIImage *originImg;
-@property (strong, nonatomic) MAImagePickerController *imagePicker;
+@property (strong, nonatomic) OcrImagePickerController *imagePicker;
 @end
 
 @implementation CTLViewController
@@ -70,7 +70,7 @@
 }
 
 - (IBAction)takePhoto:(id)sender {
-    self.imagePicker = [[MAImagePickerController alloc] init];
+    self.imagePicker = [[OcrImagePickerController alloc] init];
     
     [self.imagePicker setDelegate:self];
     self.imagePicker.pickerSourceType = MAImagePickerControllerSourceTypeCamera;
