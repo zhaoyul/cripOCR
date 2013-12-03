@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		745194A57EF240C197CB16B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A4B3606D604D9B9627FA86 /* libPods.a */; };
 		D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192021180E2363004C6B57 /* Foundation.framework */; };
 		D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192023180E2363004C6B57 /* CoreGraphics.framework */; };
 		D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192025180E2363004C6B57 /* UIKit.framework */; };
@@ -411,7 +410,6 @@
 				D5192024180E2363004C6B57 /* CoreGraphics.framework in Frameworks */,
 				D5192026180E2363004C6B57 /* UIKit.framework in Frameworks */,
 				D5192022180E2363004C6B57 /* Foundation.framework in Frameworks */,
-				745194A57EF240C197CB16B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1132,7 +1130,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
@@ -1166,6 +1164,7 @@
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1173,7 +1172,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
@@ -1201,6 +1200,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
