@@ -28,6 +28,9 @@
 		D5192062180E28DE004C6B57 /* equ.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205D180E28DE004C6B57 /* equ.traineddata */; };
 		D5192063180E28DE004C6B57 /* grc.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205E180E28DE004C6B57 /* grc.traineddata */; };
 		D5192064180E28DE004C6B57 /* ita.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D519205F180E28DE004C6B57 /* ita.traineddata */; };
+		D5371E3F184D728D00C6975B /* overlaygraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = D5371E3D184D728D00C6975B /* overlaygraphic.png */; };
+		D5371E40184D728D00C6975B /* scanbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D5371E3E184D728D00C6975B /* scanbutton.png */; };
+		D5371E42184D953B00C6975B /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5371E41184D953B00C6975B /* test.storyboard */; };
 		D5701132180E459E00F289F3 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5701131180E459E00F289F3 /* libstdc++.dylib */; };
 		D5701133180EBB3000F289F3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */; };
 		D5701138180EC1C400F289F3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5701136180EC1A800F289F3 /* opencv2.framework */; };
@@ -108,6 +111,10 @@
 		D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895183180F54B40071F5C1 /* libxml2.dylib */; };
 		D59906B81810D0A7004AB77C /* chi_sim.user-words in Resources */ = {isa = PBXBuildFile; fileRef = D59906B71810D0A7004AB77C /* chi_sim.user-words */; };
 		D59906BA1810D9CA004AB77C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59906B91810D9CA004AB77C /* MobileCoreServices.framework */; };
+		D5AD9002184C27C7005D81A3 /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5AD9001184C27C7005D81A3 /* iphone.storyboard */; };
+		D5AD9006184C2829005D81A3 /* CTLIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD9005184C2829005D81A3 /* CTLIphoneViewController.m */; };
+		D5AD9008184C28AA005D81A3 /* overlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5AD9007184C28AA005D81A3 /* overlay.xib */; };
+		D5AD900B184C62E3005D81A3 /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD900A184C62E3005D81A3 /* CaptureSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +158,9 @@
 		D519205F180E28DE004C6B57 /* ita.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = ita.traineddata; sourceTree = "<group>"; };
 		D5192065180E37B5004C6B57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D5192071180E43DD004C6B57 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D5371E3D184D728D00C6975B /* overlaygraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlaygraphic.png; sourceTree = "<group>"; };
+		D5371E3E184D728D00C6975B /* scanbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanbutton.png; sourceTree = "<group>"; };
+		D5371E41184D953B00C6975B /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		D5701131180E459E00F289F3 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		D5701134180EBE6B00F289F3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
 		D5701136180EC1A800F289F3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
@@ -379,6 +389,12 @@
 		D5895183180F54B40071F5C1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		D59906B71810D0A7004AB77C /* chi_sim.user-words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chi_sim.user-words"; sourceTree = "<group>"; };
 		D59906B91810D9CA004AB77C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D5AD9001184C27C7005D81A3 /* iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
+		D5AD9004184C2829005D81A3 /* CTLIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLIphoneViewController.h; sourceTree = "<group>"; };
+		D5AD9005184C2829005D81A3 /* CTLIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLIphoneViewController.m; sourceTree = "<group>"; };
+		D5AD9007184C28AA005D81A3 /* overlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = overlay.xib; sourceTree = "<group>"; };
+		D5AD9009184C62E3005D81A3 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		D5AD900A184C62E3005D81A3 /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +476,7 @@
 		D5192027180E2363004C6B57 /* CripOCR */ = {
 			isa = PBXGroup;
 			children = (
+				D5AD9003184C2808005D81A3 /* iphone */,
 				D5192030180E2363004C6B57 /* CTLAppDelegate.h */,
 				D5192031180E2363004C6B57 /* CTLAppDelegate.m */,
 				D5192033180E2363004C6B57 /* Main.storyboard */,
@@ -467,6 +484,7 @@
 				D5192037180E2363004C6B57 /* CTLViewController.m */,
 				D5192039180E2363004C6B57 /* Images.xcassets */,
 				D5192028180E2363004C6B57 /* Supporting Files */,
+				D5371E41184D953B00C6975B /* test.storyboard */,
 			);
 			path = CripOCR;
 			sourceTree = "<group>";
@@ -820,6 +838,21 @@
 			path = wand;
 			sourceTree = "<group>";
 		};
+		D5AD9003184C2808005D81A3 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				D5371E3D184D728D00C6975B /* overlaygraphic.png */,
+				D5371E3E184D728D00C6975B /* scanbutton.png */,
+				D5AD9001184C27C7005D81A3 /* iphone.storyboard */,
+				D5AD9004184C2829005D81A3 /* CTLIphoneViewController.h */,
+				D5AD9005184C2829005D81A3 /* CTLIphoneViewController.m */,
+				D5AD9007184C28AA005D81A3 /* overlay.xib */,
+				D5AD9009184C62E3005D81A3 /* CaptureSessionManager.h */,
+				D5AD900A184C62E3005D81A3 /* CaptureSessionManager.m */,
+			);
+			name = iphone;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -942,11 +975,13 @@
 				D5895173180F53ED0071F5C1 /* magic.xml in Resources */,
 				D5895172180F53ED0071F5C1 /* log.xml in Resources */,
 				D5764014181382C2006ACC19 /* f-setting-rotate@2x.png in Resources */,
+				D5AD9002184C27C7005D81A3 /* iphone.storyboard in Resources */,
 				D5763FF2181382C2006ACC19 /* camera-button-pressed.png in Resources */,
 				D5192062180E28DE004C6B57 /* equ.traineddata in Resources */,
 				D5763FFF181382C2006ACC19 /* enhance-button.png in Resources */,
 				D5895174180F53ED0071F5C1 /* mime.xml in Resources */,
 				D576401A181382C2006ACC19 /* flash-on-button@2x.png in Resources */,
+				D5371E40184D728D00C6975B /* scanbutton.png in Resources */,
 				D5895175180F53ED0071F5C1 /* policy.xml in Resources */,
 				D5192060180E28DE004C6B57 /* chi_sim.traineddata in Resources */,
 				D576401C181382C2006ACC19 /* toolbar-icon-crop@2x.png in Resources */,
@@ -955,6 +990,7 @@
 				D5763FF4181382C2006ACC19 /* camera-button.png in Resources */,
 				D5764016181382C2006ACC19 /* f-setting-tray@2x.png in Resources */,
 				D5895176180F53ED0071F5C1 /* quantization-table.xml in Resources */,
+				D5AD9008184C28AA005D81A3 /* overlay.xib in Resources */,
 				D5764013181382C2006ACC19 /* f-setting-rotate.png in Resources */,
 				D576401B181382C2006ACC19 /* toolbar-icon-crop.png in Resources */,
 				D5763FF9181382C2006ACC19 /* close-button.png in Resources */,
@@ -972,6 +1008,8 @@
 				D589516E180F53ED0071F5C1 /* delegates.xml in Resources */,
 				D5764004181382C2006ACC19 /* f-setting-1@2x.png in Resources */,
 				D5895170180F53ED0071F5C1 /* francais.xml in Resources */,
+				D5371E42184D953B00C6975B /* test.storyboard in Resources */,
+				D5371E3F184D728D00C6975B /* overlaygraphic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,6 +1066,7 @@
 				D5764037181382E8006ACC19 /* UIImageView+ContentFrame.m in Sources */,
 				D5701143180ED0BB00F289F3 /* ImageProcessingImplementation.mm in Sources */,
 				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
+				D5AD900B184C62E3005D81A3 /* CaptureSessionManager.m in Sources */,
 				D5764032181382E8006ACC19 /* OcrImagePickerController.m in Sources */,
 				D5701144180ED0BB00F289F3 /* ImageProcessor.cpp in Sources */,
 				D5764031181382E8006ACC19 /* OcrDrawRect.m in Sources */,
@@ -1036,6 +1075,7 @@
 				D5764033181382E8006ACC19 /* OcrImagePickerControllerAdjustViewController.mm in Sources */,
 				D5764034181382E8006ACC19 /* OcrImagePickerFinalViewController.mm in Sources */,
 				D519202E180E2363004C6B57 /* main.m in Sources */,
+				D5AD9006184C2829005D81A3 /* CTLIphoneViewController.m in Sources */,
 				D5701145180ED0BB00F289F3 /* UIImage+OpenCV.mm in Sources */,
 				D5192038180E2363004C6B57 /* CTLViewController.m in Sources */,
 				D5764030181382E8006ACC19 /* OcrConstants.m in Sources */,
@@ -1188,6 +1228,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1216,6 +1257,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
