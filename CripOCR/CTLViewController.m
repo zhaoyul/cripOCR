@@ -116,10 +116,10 @@
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
         [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
         UIImage *large = [CTLViewController imageWithImage:self.photo.image];
-        [tesseract setImage:large];
+        [tesseract setImage:self.photo.image];
         [tesseract recognize];
         NSString *recoText = [tesseract recognizedText];
-        NSLog(@"%@", recoText);
+        NSLog(@"----------------%@", recoText);
         [tesseract clear];
         NSString *version = [Tesseract version];
         NSLog(@"Tesseract's version:%@", version);
