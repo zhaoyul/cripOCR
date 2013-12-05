@@ -27,4 +27,7 @@
 
 - (void)setFlashOn:(BOOL)boolWantsFlash;
 
+- (void)makeAndApplyAffineTransform;
+
+
 @end

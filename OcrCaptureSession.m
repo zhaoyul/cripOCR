@@ -32,6 +32,20 @@
     
 }
 
+- (void)makeAndApplyAffineTransform
+{
+	// translate, then scale, then rotate
+    CGPoint effectiveTranslation = CGPointMake(0.0, 0.0);
+	CGAffineTransform affineTransform = CGAffineTransformMakeTranslation(effectiveTranslation.x, effectiveTranslation.y);
+#define effectiveScale 2.0f
+	affineTransform = CGAffineTransformScale(affineTransform, effectiveScale, effectiveScale);
+//	affineTransform = CGAffineTransformRotate(affineTransform, effectiveRotationRadians);
+	[CATransaction begin];
+	[CATransaction setAnimationDuration:.025];
+	[_previewLayer setAffineTransform:affineTransform];
+	[CATransaction commit];
+}
+
 - (void)addVideoInputFromCamera
 {
     AVCaptureDevice *backCamera;
@@ -158,11 +172,26 @@
              [self setStillImage:image];
              
 //            UIImage *image = [self addMetaDataWithMageSampleBuffer:imageSampleBuffer];
-            [self setStillImage:image];
+             UIImage *center = [self imageByCropping:image toSize:CGSizeMake(image.size.width/effectiveScale,  image.size.height/effectiveScale)];
+            [self setStillImage:center];
              
              [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
          }
      }];
+}
+
+- (UIImage *)imageByCropping:(UIImage *)image toSize:(CGSize)size
+{
+    double x = (image.size.width - size.width) / 2.0;
+    double y = (image.size.height - size.height) / 2.0;
+    
+    CGRect cropRect = CGRectMake(x, y, size.height, size.width);
+    CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], cropRect);
+    
+    UIImage *cropped = [UIImage imageWithCGImage:imageRef scale:1.0f orientation:UIImageOrientationRight];
+    CGImageRelease(imageRef);
+    
+    return cropped;
 }
 
 -(UIImage*) addMetaDataWithMageSampleBuffer: (CMSampleBufferRef) imageSampleBuffer{

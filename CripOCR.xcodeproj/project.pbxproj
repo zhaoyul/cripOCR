@@ -30,6 +30,7 @@
 		D5371E3F184D728D00C6975B /* overlaygraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = D5371E3D184D728D00C6975B /* overlaygraphic.png */; };
 		D5371E40184D728D00C6975B /* scanbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D5371E3E184D728D00C6975B /* scanbutton.png */; };
 		D5371E42184D953B00C6975B /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5371E41184D953B00C6975B /* test.storyboard */; };
+		D549A2F118503B0D00BDAF8D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D549A2F018503B0D00BDAF8D /* MBProgressHUD.m */; };
 		D5701132180E459E00F289F3 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5701131180E459E00F289F3 /* libstdc++.dylib */; };
 		D5701133180EBB3000F289F3 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5192058180E27BB004C6B57 /* libstdc++.6.0.9.dylib */; };
 		D5701138180EC1C400F289F3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5701136180EC1A800F289F3 /* opencv2.framework */; };
@@ -160,6 +161,8 @@
 		D5371E3D184D728D00C6975B /* overlaygraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlaygraphic.png; sourceTree = "<group>"; };
 		D5371E3E184D728D00C6975B /* scanbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanbutton.png; sourceTree = "<group>"; };
 		D5371E41184D953B00C6975B /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		D549A2EF18503B0D00BDAF8D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D549A2F018503B0D00BDAF8D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		D5701131180E459E00F289F3 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		D5701134180EBE6B00F289F3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
 		D5701136180EC1A800F289F3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
@@ -429,6 +432,7 @@
 		D5192015180E2362004C6B57 = {
 			isa = PBXGroup;
 			children = (
+				D549A2ED18503AEA00BDAF8D /* libary */,
 				D5763FC2181382AC006ACC19 /* CTLImagePicker */,
 				D5701139180ED0AC00F289F3 /* opencv */,
 				D519205A180E28DE004C6B57 /* tessdata */,
@@ -527,6 +531,23 @@
 				D519205F180E28DE004C6B57 /* ita.traineddata */,
 			);
 			path = tessdata;
+			sourceTree = "<group>";
+		};
+		D549A2ED18503AEA00BDAF8D /* libary */ = {
+			isa = PBXGroup;
+			children = (
+				D549A2EE18503AFC00BDAF8D /* hud */,
+			);
+			name = libary;
+			sourceTree = "<group>";
+		};
+		D549A2EE18503AFC00BDAF8D /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				D549A2EF18503B0D00BDAF8D /* MBProgressHUD.h */,
+				D549A2F018503B0D00BDAF8D /* MBProgressHUD.m */,
+			);
+			name = hud;
 			sourceTree = "<group>";
 		};
 		D5701139180ED0AC00F289F3 /* opencv */ = {
@@ -1066,6 +1087,7 @@
 				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
 				D5AD900B184C62E3005D81A3 /* CaptureSessionManager.m in Sources */,
 				D5764032181382E8006ACC19 /* OcrImagePickerController.m in Sources */,
+				D549A2F118503B0D00BDAF8D /* MBProgressHUD.m in Sources */,
 				D5701144180ED0BB00F289F3 /* ImageProcessor.cpp in Sources */,
 				D5764031181382E8006ACC19 /* OcrDrawRect.m in Sources */,
 				D576402F181382E8006ACC19 /* OcrCaptureSession.m in Sources */,
@@ -1211,7 +1233,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lucent Technologies Qingdao Telecommunications Equipment Co., Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1240,7 +1262,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lucent Technologies Qingdao Telecommunications Equipment Co., Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

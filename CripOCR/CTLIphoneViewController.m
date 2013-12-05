@@ -64,7 +64,7 @@
 {
     UIImageWriteToSavedPhotosAlbum([[self captureManager] stillImage], self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     UIImageWriteToSavedPhotosAlbum([[self captureManager]  cropedImage], self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-    self.toBeRecg = self.captureManager.stillImage;
+    self.toBeRecg = self.captureManager.cropedImage;
     [self textRecg:nil];
     
 }
@@ -101,7 +101,7 @@
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         //        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
-//        [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
+        [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
 //        UIImage *largeImg = [CTLIphoneViewController imageWithImage:self.toBeRecg];
         [tesseract setImage:self.toBeRecg];
         [tesseract recognize];
