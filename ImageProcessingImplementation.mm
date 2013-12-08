@@ -69,7 +69,7 @@
 - (UIImage*) processHistogram:(UIImage*)src{
     
     ImageProcessor processor;
-    cv::Mat source=[src CVGrayscaleMat];
+    cv::Mat source=[src CVGrayscaleMatFromAdjustedImage];
     cv::Mat output=processor.equalize(source);
     UIImage *equalized=[UIImage imageWithCVMat:output];
     return equalized;
@@ -79,7 +79,7 @@
 - (UIImage*) processFilter:(UIImage*)src{
    
     ImageProcessor processor;
-    cv::Mat source=[src CVGrayscaleMat];
+    cv::Mat source=[src CVGrayscaleMatFromAdjustedImage];
     cv::Mat output=processor.filterMedianSmoot(source);
     UIImage *filtered=[UIImage imageWithCVMat:output];
     return filtered;
@@ -89,7 +89,7 @@
 - (UIImage*) processBinarize:(UIImage*)src{
     
     ImageProcessor processor;
-    cv::Mat source=[src CVGrayscaleMat];
+    cv::Mat source=[src CVGrayscaleMatFromAdjustedImage];
     cv::Mat output=processor.binarize(source);
     UIImage *binarized=[UIImage imageWithCVMat:output];
     return binarized;

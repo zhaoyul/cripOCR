@@ -33,9 +33,9 @@ cv::Mat ImageProcessor::filterMedianSmoot(const cv::Mat &source){
     
     
     cv::Mat results;
-//    cv::medianBlur(source, results, 3);
+    cv::medianBlur(source, results, 3);
     medianBlur(source, results, 3);
-    threshold(results, results, 0, 140, cv::THRESH_OTSU);
+    threshold(results, results, 0, 100, cv::THRESH_OTSU);
     return results;
 }
 

@@ -15,6 +15,8 @@
 #import <MobileCoreServices/MobileCoreServices.h> 
 #import "OcrImagePickerController.h"
 
+#import "UIImage+Extensions.h"
+
 @interface CTLViewController () <MAImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
@@ -35,7 +37,6 @@
     if (self.imagePicker) {
         self.photo.image = self.imagePicker.adjustedImg;
         self.originImg = self.imagePicker.adjustedImg;
-
     }
 }
 
@@ -59,6 +60,7 @@
         NSURL *fileUrl=[NSURL fileURLWithPath:path];
         NSData *data = [NSData dataWithContentsOfURL:fileUrl];
         self.photo.image = [UIImage imageWithData:data];
+        self.originImg = self.photo.image;
         
     }
     else
@@ -115,6 +117,8 @@
 //        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
         [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
+        [tesseract setVariableValue:@"8" forKey:@"tessedit_pageseg_mode"];
+
         UIImage *large = [CTLViewController imageWithImage:self.photo.image];
         [tesseract setImage:self.photo.image];
         UIImageWriteToSavedPhotosAlbum(self.photo.image, nil, nil, nil);
@@ -149,18 +153,64 @@
 }
 - (IBAction)histogram:(id)sender {
     ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
+//    self.photo.image = [self fixOrientation:[ip processHistogram:self.originImg]];
+//    self.photo.image = rotate([ip processHistogram:self.originImg], UIImageOrientationLeft);
     self.photo.image = [ip processHistogram:self.originImg];
+//    CGSize newSize  = CGSizeMake(self.originImg.size.width, self.originImg.size.height);
+//    [self.photo.image imageByScalingToSize:newSize];
+
+
+    
 }
 - (IBAction)filter:(id)sender {
     ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
     self.photo.image = [ip processFilter:self.originImg];
+
 }
 - (IBAction)binarize:(id)sender {
     ImageProcessingImplementation *ip = [[ImageProcessingImplementation alloc] init];
     self.photo.image = [ip processBinarize:self.originImg];
+//    CGSize newSize  = CGSizeMake(self.originImg.size.width, self.originImg.size.height);
+    
+//    [self.photo.image imageByScalingToSize:newSize];
+
 }
+- (UIImage*)fixOrientation:(UIImage *)originalImage {
+    UIImage *adjustedImage = [[UIImage alloc] initWithCGImage: originalImage.CGImage
+                                                scale: 1.0
+                                          orientation: UIImageOrientationLeft];
+    return adjustedImage;
+}
+
+static inline double radians (double degrees) {return degrees * M_PI/180;}
+UIImage* rotate(UIImage* src, UIImageOrientation orientation)
+{
+    UIGraphicsBeginImageContext(src.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    if (orientation == UIImageOrientationRight) {
+        CGContextRotateCTM (context, radians(90));
+    } else if (orientation == UIImageOrientationLeft) {
+        CGContextRotateCTM (context, radians(-90));
+    } else if (orientation == UIImageOrientationDown) {
+        // NOTHING
+    } else if (orientation == UIImageOrientationUp) {
+        CGContextRotateCTM (context, radians(90));
+    }
+    
+    [src drawAtPoint:CGPointMake(0, 0)];
+    
+    return UIGraphicsGetImageFromCurrentImageContext();
+}
+
 - (IBAction)restore:(id)sender {
     self.photo.image = self.originImg;
+    
+    UIImage *originalImage = self.originImg;
+    
+    [self fixOrientation:originalImage];
+    
 }
 
 

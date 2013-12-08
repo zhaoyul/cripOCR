@@ -111,6 +111,8 @@
 		D5895184180F54B40071F5C1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895183180F54B40071F5C1 /* libxml2.dylib */; };
 		D59906B81810D0A7004AB77C /* chi_sim.user-words in Resources */ = {isa = PBXBuildFile; fileRef = D59906B71810D0A7004AB77C /* chi_sim.user-words */; };
 		D59906BA1810D9CA004AB77C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59906B91810D9CA004AB77C /* MobileCoreServices.framework */; };
+		D59AA926185496EE0067E29D /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D59AA925185496EE0067E29D /* UIImage+Extensions.m */; };
+		D59AA9281854A7690067E29D /* deploy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59AA9271854A7690067E29D /* deploy.storyboard */; };
 		D5AD9002184C27C7005D81A3 /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5AD9001184C27C7005D81A3 /* iphone.storyboard */; };
 		D5AD9006184C2829005D81A3 /* CTLIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD9005184C2829005D81A3 /* CTLIphoneViewController.m */; };
 		D5AD9008184C28AA005D81A3 /* overlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5AD9007184C28AA005D81A3 /* overlay.xib */; };
@@ -391,6 +393,9 @@
 		D5895183180F54B40071F5C1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		D59906B71810D0A7004AB77C /* chi_sim.user-words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chi_sim.user-words"; sourceTree = "<group>"; };
 		D59906B91810D9CA004AB77C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D59AA924185496EE0067E29D /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		D59AA925185496EE0067E29D /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		D59AA9271854A7690067E29D /* deploy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = deploy.storyboard; sourceTree = "<group>"; };
 		D5AD9001184C27C7005D81A3 /* iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
 		D5AD9004184C2829005D81A3 /* CTLIphoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTLIphoneViewController.h; sourceTree = "<group>"; };
 		D5AD9005184C2829005D81A3 /* CTLIphoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTLIphoneViewController.m; sourceTree = "<group>"; };
@@ -486,7 +491,6 @@
 				D5192037180E2363004C6B57 /* CTLViewController.m */,
 				D5192039180E2363004C6B57 /* Images.xcassets */,
 				D5192028180E2363004C6B57 /* Supporting Files */,
-				D5371E41184D953B00C6975B /* test.storyboard */,
 			);
 			path = CripOCR;
 			sourceTree = "<group>";
@@ -588,6 +592,8 @@
 				D576402D181382E8006ACC19 /* UIImageView+ContentFrame.h */,
 				D576402E181382E8006ACC19 /* UIImageView+ContentFrame.m */,
 				D57640381813830E006ACC19 /* pics */,
+				D59AA924185496EE0067E29D /* UIImage+Extensions.h */,
+				D59AA925185496EE0067E29D /* UIImage+Extensions.m */,
 			);
 			name = CTLImagePicker;
 			sourceTree = "<group>";
@@ -860,6 +866,7 @@
 		D5AD9003184C2808005D81A3 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
+				D5371E41184D953B00C6975B /* test.storyboard */,
 				D5371E3D184D728D00C6975B /* overlaygraphic.png */,
 				D5371E3E184D728D00C6975B /* scanbutton.png */,
 				D5AD9001184C27C7005D81A3 /* iphone.storyboard */,
@@ -868,6 +875,7 @@
 				D5AD9007184C28AA005D81A3 /* overlay.xib */,
 				D5AD9009184C62E3005D81A3 /* CaptureSessionManager.h */,
 				D5AD900A184C62E3005D81A3 /* CaptureSessionManager.m */,
+				D59AA9271854A7690067E29D /* deploy.storyboard */,
 			);
 			name = iphone;
 			sourceTree = "<group>";
@@ -963,6 +971,7 @@
 				D589516C180F53ED0071F5C1 /* coder.xml in Resources */,
 				D5764019181382C2006ACC19 /* flash-on-button.png in Resources */,
 				D5192061180E28DE004C6B57 /* eng.traineddata in Resources */,
+				D59AA9281854A7690067E29D /* deploy.storyboard in Resources */,
 				D5192063180E28DE004C6B57 /* grc.traineddata in Resources */,
 				D519203A180E2363004C6B57 /* Images.xcassets in Resources */,
 				D5764010181382C2006ACC19 /* f-setting-4@2x.png in Resources */,
@@ -1083,6 +1092,7 @@
 				D5764036181382E8006ACC19 /* UIImage+fixOrientation.m in Sources */,
 				D5764035181382E8006ACC19 /* OcrOpenCV.mm in Sources */,
 				D5764037181382E8006ACC19 /* UIImageView+ContentFrame.m in Sources */,
+				D59AA926185496EE0067E29D /* UIImage+Extensions.m in Sources */,
 				D5701143180ED0BB00F289F3 /* ImageProcessingImplementation.mm in Sources */,
 				D5192032180E2363004C6B57 /* CTLAppDelegate.m in Sources */,
 				D5AD900B184C62E3005D81A3 /* CaptureSessionManager.m in Sources */,
