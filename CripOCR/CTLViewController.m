@@ -9,7 +9,7 @@
 #import "CTLViewController.h"
 #import <TesseractOCR/TesseractOCR.h>
 #import <dispatch/dispatch.h>
-#import "MBProgressHUD.h"
+#import <MBProgressHUD.h>
 #import "ImageProcessingImplementation.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MobileCoreServices/MobileCoreServices.h> 
