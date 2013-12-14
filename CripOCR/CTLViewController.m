@@ -102,6 +102,11 @@
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
+//        NSString *digitLetters = @"0123456789ABCDEFGHIGKLMNOPQRSTUVWXUZabcdefghigklmnopqrstuvwxyz";
+//        NSString *chinese = @"英文中名称结果单位参考范围丙氨酸安基转移酶总蛋白球比胆红素直接酰转肽碱性磷汁乳脱氢钾钠氯酯";
+//        NSString *symbol = @"/-.*";
+//        NSString *total = [NSString stringWithFormat:@"%@%@%@", digitLetters, chinese, symbol];
+//        [tesseract setVariableValue:total forKey:@"tessedit_char_whitelist"];
         [tesseract setImage:self.photo.image];
         [tesseract recognize];
         NSString *recoText = [tesseract recognizedText];
