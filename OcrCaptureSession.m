@@ -172,8 +172,9 @@
              [self setStillImage:image];
              
 //            UIImage *image = [self addMetaDataWithMageSampleBuffer:imageSampleBuffer];
-             UIImage *center = [self imageByCropping:image toSize:CGSizeMake(image.size.width/effectiveScale,  image.size.height/effectiveScale)];
-            [self setStillImage:center];
+//             //放大
+//             UIImage *center = [self imageByCropping:image toSize:CGSizeMake(image.size.width/effectiveScale,  image.size.height/effectiveScale)];
+            [self setStillImage:image];
              
              [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
          }

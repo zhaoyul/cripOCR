@@ -167,7 +167,8 @@
         [_pictureButton setEnabled:YES];
         [[_captureManager captureSession] startRunning];
     }
-    [self.captureManager makeAndApplyAffineTransform];
+    //放大preview layer
+//    [self.captureManager makeAndApplyAffineTransform];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
