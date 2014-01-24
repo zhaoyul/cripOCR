@@ -108,6 +108,13 @@
     return newImage;
 }
 
+-(UIImage*) cropImage:(UIImage*) image withStartX:(CGFloat) startX withStartY :(CGFloat) startY withWidth :(CGFloat) width withHeight:(CGFloat) height {
+    CGRect rect = CGRectMake(image.size.width*startX, image.size.height*startY, image.size.width*width, image.size.height*height);
+    CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
+    UIImage *img = [UIImage imageWithCGImage:imageRef];
+    return img;
+}
+
 - (IBAction)textRecg:(id)sender {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
@@ -117,11 +124,13 @@
 //        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
         Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
 //        [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
+        [tesseract setVariableValue:@"Oo_" forKey:@"tessedit_char_blacklist"];
 //        [tesseract setVariableValue:@"8" forKey:@"tessedit_pageseg_mode"];
 
-        UIImage *large = [CTLViewController imageWithImage:self.photo.image];
-        [tesseract setImage:self.photo.image];
-        UIImageWriteToSavedPhotosAlbum(self.photo.image, nil, nil, nil);
+//        UIImage *large = [CTLViewController imageWithImage:self.photo.image];
+        UIImage *cropedImage = [self cropImage:self.photo.image withStartX:0.37f withStartY:0.66f withWidth:0.7f withHeight:0.33f];
+        [tesseract setImage:cropedImage];
+        UIImageWriteToSavedPhotosAlbum(cropedImage, nil, nil, nil);
         [tesseract recognize];
         NSString *recoText = [tesseract recognizedText];
         NSLog(@"----------------%@", recoText);

@@ -167,7 +167,8 @@
         [_pictureButton setEnabled:YES];
         [[_captureManager captureSession] startRunning];
     }
-    [self.captureManager makeAndApplyAffineTransform];
+//Disable the scale
+//    [self.captureManager makeAndApplyAffineTransform];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
