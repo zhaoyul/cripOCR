@@ -115,9 +115,9 @@
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
 //        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
-        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
-        [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
-        [tesseract setVariableValue:@"8" forKey:@"tessedit_pageseg_mode"];
+        Tesseract* tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"chi_sim"];
+//        [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"];
+//        [tesseract setVariableValue:@"8" forKey:@"tessedit_pageseg_mode"];
 
         UIImage *large = [CTLViewController imageWithImage:self.photo.image];
         [tesseract setImage:self.photo.image];
